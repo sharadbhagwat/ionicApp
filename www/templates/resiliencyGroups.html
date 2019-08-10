@@ -10,10 +10,9 @@
       <ion-item detail mode="md" ng-repeat="rg in RGs" href="#/app/resiliencyGroups/{{rg.rgId}}">
 
           <ion-grid>
-          
           <ion-row align-items-start>
             <ion-col style="display:inline-block;">
-          <ion-icon  name="warning" size="large" id="dynamicColor" ng-style="rg.state == 'Online' ? {'color': '#ffce00'} : {'color': 'red'}" style="height: 1.8em;" slot="end"></ion-icon>
+          <ion-icon  name="checkmark-circle-outline" size="large" id="dynamicColor" ng-style="rg.state == 'Online' ? {'color': 'green'} : {'color': 'red'}" style="height: 1.8em;" slot="end"></ion-icon>
             </ion-col>
             <ion-col style=" margin-left: 7px;display:inline-block;">
               <ion-label >
