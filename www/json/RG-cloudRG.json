@@ -1,0 +1,410 @@
+{
+    "id": "c7a3a531-3274-4ffb-8778-a2244ffb8e9d",
+    "name": "Cloud-RG1",
+    "underMaintenance": false,
+    "type": "asset.host",
+    "state": {
+        "code": "state.online",
+        "name": "Online"
+    },
+    "health": {
+        "code": "health.atrisk",
+        "name": "At Risk"
+    },
+    "datacenters": [
+        {
+            "name": "Pune DC",
+            "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+        },
+        {
+            "name": "Cairo DC",
+            "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+        }
+    ],
+    "activeDatacenters": [
+        {
+            "name": "Pune DC",
+            "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+        }
+    ],
+    "risks": {
+        "severity": {
+            "risk.error": 2,
+            "risk.warning": 0
+        },
+        "category": {
+            "risk.recoverability": 2,
+            "risk.continuity": 0,
+            "risk.sla": 0
+        },
+        "ref": "/rgs/c7a3a531-3274-4ffb-8778-a2244ffb8e9d/risks"
+    },
+    "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+            {
+                "type": "copy",
+                "value": [
+                    "remote",
+                    "local"
+                ]
+            }
+        ],
+        "monitored": false
+    },
+    "currentRecoveryPoint": [
+        {
+            "rpTime": "2019-08-06T00:04:45+05:30",
+            "type": "copy",
+            "datacenter": {
+                "name": "Cairo DC",
+                "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+            }
+        },
+        {
+            "rpTime": "2019-08-06T00:04:45+05:30",
+            "type": "copy",
+            "datacenter": {
+                "name": "Pune DC",
+                "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+            }
+        }
+    ],
+    "dataProtectionInfo": [
+        {
+            "type": "copy",
+            "details": [
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289243000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565030085000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289293000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565030118000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289287000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289247000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289287000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289297000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289299000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289242000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289299000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289297000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289241000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289291000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565289299000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289243000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565030085000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289293000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565030118000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289287000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289247000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289287000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289297000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289299000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289242000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289299000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289297000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289241000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289291000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565289299000"
+                }
+            ]
+        }
+    ],
+    "assets": [
+        {
+            "name": "nbudr-clus-v42.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v32.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v45.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v39.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v31.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v28.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v29.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v48.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v44.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v25.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v26.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v38.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v30.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v2.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        },
+        {
+            "name": "nbudr-clus-v37.vrpwindns.com",
+            "state": {
+                "code": "state.on",
+                "name": "On"
+            }
+        }
+    ],
+    "activities": {
+        "lastCompleted": {
+            "id": "42385188-b863-4350-b428-539a1250615e",
+            "name": "Start",
+            "state": {
+                "code": "activity.success",
+                "name": "Finished"
+            },
+            "ref": "/activities/42385188-b863-4350-b428-539a1250615e"
+        },
+        "current": [],
+        "ref": "/rgs/c7a3a531-3274-4ffb-8778-a2244ffb8e9d/activities"
+    }
+}

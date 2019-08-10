@@ -1,0 +1,131 @@
+{
+    "id": "0073dc03-5ec1-4ffe-8f9f-215f743d4e8d",
+    "name": "test123",
+    "underMaintenance": false,
+    "type": "asset.host",
+    "state": {
+        "code": "state.offline",
+        "name": "Offline"
+    },
+    "health": {
+        "code": "health.atrisk",
+        "name": "At Risk"
+    },
+    "datacenters": [
+        {
+            "name": "Pune DC",
+            "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+        },
+        {
+            "name": "Cairo DC",
+            "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+        }
+    ],
+    "activeDatacenters": [],
+    "risks": {
+        "severity": {
+            "risk.error": 3,
+            "risk.warning": 1
+        },
+        "category": {
+            "risk.recoverability": 3,
+            "risk.continuity": 1,
+            "risk.sla": 0
+        },
+        "ref": "/rgs/0073dc03-5ec1-4ffe-8f9f-215f743d4e8d/risks"
+    },
+    "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+            {
+                "type": "copy",
+                "value": [
+                    "remote",
+                    "local"
+                ]
+            }
+        ],
+        "monitored": false
+    },
+    "currentRecoveryPoint": [
+        {
+            "rpTime": "2019-08-06T00:03:09+05:30",
+            "type": "copy",
+            "datacenter": {
+                "name": "Cairo DC",
+                "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+            }
+        },
+        {
+            "rpTime": "2019-08-06T00:03:09+05:30",
+            "type": "copy",
+            "datacenter": {
+                "name": "Pune DC",
+                "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+            }
+        }
+    ],
+    "dataProtectionInfo": [
+        {
+            "type": "copy",
+            "details": [
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565030012000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565029989000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Cairo DC",
+                        "ref": "/datacenters/18bc463b-45d2-4088-9955-f0fa60df3f20"
+                    },
+                    "lastBackupTime": "1565029992000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565030012000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565029989000"
+                },
+                {
+                    "datacenter": {
+                        "name": "Pune DC",
+                        "ref": "/datacenters/9784ff96-8849-4a5b-9159-be69d5d931f2"
+                    },
+                    "lastBackupTime": "1565029992000"
+                }
+            ]
+        }
+    ],
+    "assets": [],
+    "activities": {
+        "lastCompleted": {
+            "id": "dd8bdd76-f764-44ac-b74f-42ec935797d9",
+            "name": "BASE.OPERATION_RESTORE",
+            "state": {
+                "code": "activity.fail",
+                "name": "Failed"
+            },
+            "ref": "/activities/dd8bdd76-f764-44ac-b74f-42ec935797d9"
+        },
+        "current": [],
+        "ref": "/rgs/0073dc03-5ec1-4ffe-8f9f-215f743d4e8d/activities"
+    }
+}
