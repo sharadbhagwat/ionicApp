@@ -1,0 +1,1657 @@
+{
+  "meta": {
+    "count": 45,
+    "severity": {
+      "risk.error": 0,
+      "risk.warning": 45
+    },
+    "category": {
+      "risk.recoverability": 39,
+      "risk.continuity": 1,
+      "risk.sla": 5
+    }
+  },
+  "items": [
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": { 
+		"code": "risk.error",
+        "name": "Error"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T15:19:54+05:30",
+      "affectedObject": {
+        "name": "vmware-test15.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T15:49:59+05:30",
+      "affectedObject": {
+        "name": "recoverpoint-vm2.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.error",
+		"name": "Error"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T16:21:20+05:30",
+      "affectedObject": {
+        "name": "recoverpoint-vm4.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+         "code": "risk.error",
+         "name": "Error"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T16:25:55+05:30",
+      "affectedObject": {
+        "name": "vmware-test9.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T16:22:05+05:30",
+      "affectedObject": {
+        "name": "recoverpoint-vm5.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T17:42:35+05:30",
+      "affectedObject": {
+        "name": "vmware-test20.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T17:54:41+05:30",
+      "affectedObject": {
+        "name": "vmware-test6.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T17:56:15+05:30",
+      "affectedObject": {
+        "name": "vmware-test7.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T15:06:24+05:30",
+      "affectedObject": {
+        "name": "vmware-test19.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T16:25:55+05:30",
+      "affectedObject": {
+        "name": "vmware-test8.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T17:48:52+05:30",
+      "affectedObject": {
+        "name": "vmware-test4.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "vrp.risk.replication.sla.violation",
+      "name": "Replication lag exceeding RPO",
+      "suppressed": true,
+      "suppressPeriod": "2019-08-18T10:38:27+05:30",
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.sla",
+        "name": "SLA"
+      },
+      "detectionTime": "2019-08-08T10:35+05:30",
+      "affectedObject": {
+        "name": "3PAR-RG-DNS-cust",
+        "ref": "/rgs/da52e9c4-cc13-4af4-b9e7-b86a2a0dcf02",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "3PAR-RG-DNS-cust",
+          "ref": "/rgs/da52e9c4-cc13-4af4-b9e7-b86a2a0dcf02"
+        }
+      ],
+      "affectedVbs": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d"
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "The replication lag exceeds the thresholds defined for resiliency group. This risk affects the SLA for the services running on your source datacenter.",
+        "resolution": "1.Low network bandwidth. Check if the network bandwidth is a adequate to transfer data to recovery datacenter. Also, check the statistics at network switch level and rectify them.<br>2.Replication suspended due to Takeover operation. Resume the replication porcess by invoking the Resync operation on the resiliency group.<br>3.Replication suspended manually. Resume the replication process."
+      }
+    },
+    {
+      "type": "vrp.risk.replication.sla.violation",
+      "name": "Replication lag exceeding RPO",
+      "suppressed": true,
+      "suppressPeriod": "2019-08-18T10:38:17+05:30",
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.sla",
+        "name": "SLA"
+      },
+      "detectionTime": "2019-08-08T10:35+05:30",
+      "affectedObject": {
+        "name": "3PAR-RG-diff-WWN",
+        "ref": "/rgs/057026a1-e205-4f39-aa4f-b3631fb11012",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "3PAR-RG-diff-WWN",
+          "ref": "/rgs/057026a1-e205-4f39-aa4f-b3631fb11012"
+        }
+      ],
+      "affectedVbs": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d"
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "The replication lag exceeds the thresholds defined for resiliency group. This risk affects the SLA for the services running on your source datacenter.",
+        "resolution": "1.Low network bandwidth. Check if the network bandwidth is a adequate to transfer data to recovery datacenter. Also, check the statistics at network switch level and rectify them.<br>2.Replication suspended due to Takeover operation. Resume the replication porcess by invoking the Resync operation on the resiliency group.<br>3.Replication suspended manually. Resume the replication process."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T12:01:03+05:30",
+      "affectedObject": {
+        "name": "NBU-DNS-Cust-RG",
+        "ref": "/rgs/45962195-51b8-4caa-ae52-b580ffac6fb1",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-DNS-Cust-RG",
+          "ref": "/rgs/45962195-51b8-4caa-ae52-b580ffac6fb1"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T12:01:10+05:30",
+      "affectedObject": {
+        "name": "NBU-RG2",
+        "ref": "/rgs/91deb183-5e46-408e-8f6c-6ee696ce9410",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-RG2",
+          "ref": "/rgs/91deb183-5e46-408e-8f6c-6ee696ce9410"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T12:02:20+05:30",
+      "affectedObject": {
+        "name": "NBU-RG3",
+        "ref": "/rgs/a24eb68e-6dbc-44ce-a5a2-9730c54aae00",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-RG3",
+          "ref": "/rgs/a24eb68e-6dbc-44ce-a5a2-9730c54aae00"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T12:14:07+05:30",
+      "affectedObject": {
+        "name": "NBU-RG6",
+        "ref": "/rgs/f4251fe0-3e18-4a61-968a-0c37771c08ec",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-RG6",
+          "ref": "/rgs/f4251fe0-3e18-4a61-968a-0c37771c08ec"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T12:23:31+05:30",
+      "affectedObject": {
+        "name": "NBU-RG9",
+        "ref": "/rgs/0bfc5f26-7392-4a41-b950-9c111e9e7c11",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-RG9",
+          "ref": "/rgs/0bfc5f26-7392-4a41-b950-9c111e9e7c11"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.risk.disk.utilization.critical",
+      "name": "Disk Utilization Critical",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.continuity",
+        "name": "Continuity"
+      },
+      "detectionTime": "2019-08-08T15:30:22+05:30",
+      "affectedObject": {
+        "name": "RP-DS2",
+        "type": {
+          "code": "object.type.fs",
+          "name": "File System"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "At least 80% of the disk capacity is being utilized. This risk affects the continuity of the services running on your source datacenter.",
+        "resolution": "Delete or move some files or uninstall some non-critical applications to free up some disk space."
+      }
+    },
+    {
+      "type": "vrp.risk.replication.sla.violation",
+      "name": "Replication lag exceeding RPO",
+      "suppressed": true,
+      "suppressPeriod": "2019-08-18T10:38:34+05:30",
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.sla",
+        "name": "SLA"
+      },
+      "detectionTime": "2019-08-08T10:30+05:30",
+      "affectedObject": {
+        "name": "3PAR-RG-same-WWN",
+        "ref": "/rgs/eeff1afd-09a7-46bf-bad1-e8d3823a669f",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "3PAR-RG-same-WWN",
+          "ref": "/rgs/eeff1afd-09a7-46bf-bad1-e8d3823a669f"
+        }
+      ],
+      "affectedVbs": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d"
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "The replication lag exceeds the thresholds defined for resiliency group. This risk affects the SLA for the services running on your source datacenter.",
+        "resolution": "1.Low network bandwidth. Check if the network bandwidth is a adequate to transfer data to recovery datacenter. Also, check the statistics at network switch level and rectify them.<br>2.Replication suspended due to Takeover operation. Resume the replication porcess by invoking the Resync operation on the resiliency group.<br>3.Replication suspended manually. Resume the replication process."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T12:16:50+05:30",
+      "affectedObject": {
+        "name": "NBU-RG7",
+        "ref": "/rgs/5b24a9a6-1da4-491d-a40f-da8996b14010",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-RG7",
+          "ref": "/rgs/5b24a9a6-1da4-491d-a40f-da8996b14010"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T12:21:49+05:30",
+      "affectedObject": {
+        "name": "NBU-RG8",
+        "ref": "/rgs/df0f7fac-c29b-4e95-9209-cdde63f0db64",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-RG8",
+          "ref": "/rgs/df0f7fac-c29b-4e95-9209-cdde63f0db64"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T12:03:55+05:30",
+      "affectedObject": {
+        "name": "NBU-RG4",
+        "ref": "/rgs/2ddc32f9-ee94-4e7c-bc26-fdb78c97b58d",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-RG4",
+          "ref": "/rgs/2ddc32f9-ee94-4e7c-bc26-fdb78c97b58d"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.risk.replication.sla.violation",
+      "name": "Replication lag exceeding RPO",
+      "suppressed": true,
+      "suppressPeriod": "2019-08-18T12:31:44+05:30",
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.sla",
+        "name": "SLA"
+      },
+      "detectionTime": "2019-08-08T12:30:03+05:30",
+      "affectedObject": {
+        "name": "3PAR-RG5",
+        "ref": "/rgs/a58a5417-ec5d-4487-9974-d61aba999691",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "3PAR-RG5",
+          "ref": "/rgs/a58a5417-ec5d-4487-9974-d61aba999691"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "The replication lag exceeds the thresholds defined for resiliency group. This risk affects the SLA for the services running on your source datacenter.",
+        "resolution": "1.Low network bandwidth. Check if the network bandwidth is a adequate to transfer data to recovery datacenter. Also, check the statistics at network switch level and rectify them.<br>2.Replication suspended due to Takeover operation. Resume the replication porcess by invoking the Resync operation on the resiliency group.<br>3.Replication suspended manually. Resume the replication process."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T15:05:43+05:30",
+      "affectedObject": {
+        "name": "NBU-Target-All-RG",
+        "ref": "/rgs/353c9115-5627-49a1-a819-2f3d62afd0bc",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-Target-All-RG",
+          "ref": "/rgs/353c9115-5627-49a1-a819-2f3d62afd0bc"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T15:07:59+05:30",
+      "affectedObject": {
+        "name": "NBU-Source-All-RG",
+        "ref": "/rgs/f8e0e453-01ca-40c0-bd12-7fcf794885d8",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-Source-All-RG",
+          "ref": "/rgs/f8e0e453-01ca-40c0-bd12-7fcf794885d8"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T15:55:23+05:30",
+      "affectedObject": {
+        "name": "NBU-All-option-RG",
+        "ref": "/rgs/c2167f8b-fd6d-4ddc-b017-546518fe90c1",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-All-option-RG",
+          "ref": "/rgs/c2167f8b-fd6d-4ddc-b017-546518fe90c1"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T15:49:59+05:30",
+      "affectedObject": {
+        "name": "recoverpoint-vm1.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T16:21:20+05:30",
+      "affectedObject": {
+        "name": "recoverpoint-vm3.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T16:22:05+05:30",
+      "affectedObject": {
+        "name": "recoverpoint-vm6.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T17:43:07+05:30",
+      "affectedObject": {
+        "name": "vmware-test14.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T17:37:40+05:30",
+      "affectedObject": {
+        "name": "vmware-test12.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T17:51:33+05:30",
+      "affectedObject": {
+        "name": "vmware-test5.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "vrp.risk.replication.sla.violation",
+      "name": "Replication lag exceeding RPO",
+      "suppressed": true,
+      "suppressPeriod": "2019-08-18T12:27:50+05:30",
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.sla",
+        "name": "SLA"
+      },
+      "detectionTime": "2019-08-08T12:20+05:30",
+      "affectedObject": {
+        "name": "3PAR-RG4",
+        "ref": "/rgs/599d2e16-5081-4dc7-9b30-afe5d5b6772f",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "3PAR-RG4",
+          "ref": "/rgs/599d2e16-5081-4dc7-9b30-afe5d5b6772f"
+        }
+      ],
+      "affectedVbs": [
+        {
+          "name": "Mix-3PAR-RP-VBS",
+          "ref": "/vbs/80f09dcf-cef8-c2c7-f1ce-8d7fa8a23f2f"
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "The replication lag exceeds the thresholds defined for resiliency group. This risk affects the SLA for the services running on your source datacenter.",
+        "resolution": "1.Low network bandwidth. Check if the network bandwidth is a adequate to transfer data to recovery datacenter. Also, check the statistics at network switch level and rectify them.<br>2.Replication suspended due to Takeover operation. Resume the replication porcess by invoking the Resync operation on the resiliency group.<br>3.Replication suspended manually. Resume the replication process."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T12:29:18+05:30",
+      "affectedObject": {
+        "name": "NBU-RG10",
+        "ref": "/rgs/7203230a-e769-48d7-bc78-935782f9a4b5",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-RG10",
+          "ref": "/rgs/7203230a-e769-48d7-bc78-935782f9a4b5"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T14:57:58+05:30",
+      "affectedObject": {
+        "name": "NBU-IA-Only",
+        "ref": "/rgs/7df2c301-c9e7-4d39-b986-a778fcb7ee03",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-IA-Only",
+          "ref": "/rgs/7df2c301-c9e7-4d39-b986-a778fcb7ee03"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T15:06:24+05:30",
+      "affectedObject": {
+        "name": "vmware-test18.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T15:10:31+05:30",
+      "affectedObject": {
+        "name": "vmware-test17.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T15:12:26+05:30",
+      "affectedObject": {
+        "name": "vmware-test22.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T15:19:54+05:30",
+      "affectedObject": {
+        "name": "vmware-test16.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T17:35:45+05:30",
+      "affectedObject": {
+        "name": "vmware-test11.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "netbackupdisabledpolicy",
+      "name": "Disabled NetBackup Policy",
+      "suppressed": false,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-06T17:40:03+05:30",
+      "affectedObject": {
+        "name": "vmware-test13.vrpwindns.com",
+        "type": {
+          "code": "object.type.host",
+          "name": "Host"
+        }
+      },
+      "affectedRgs": [],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "details": {
+        "description": "Policy associated with Virtual Machine is disabled.",
+        "resolution": "Check if Virtual Machine has any disabled Copy Policy."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T12:05:03+05:30",
+      "affectedObject": {
+        "name": "NBU-RG5",
+        "ref": "/rgs/38c5bd64-db52-4de1-ae8d-00e93d5a8dc8",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-RG5",
+          "ref": "/rgs/38c5bd64-db52-4de1-ae8d-00e93d5a8dc8"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.warning",
+        "name": "Warning"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T14:59:44+05:30",
+      "affectedObject": {
+        "name": "NBU-Target-IA-Only",
+        "ref": "/rgs/55fef18d-b942-484e-afef-7d5d60d55f00",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-Target-IA-Only",
+          "ref": "/rgs/55fef18d-b942-484e-afef-7d5d60d55f00"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    },
+    {
+      "type": "vrp.nbu.risk.targetreplicationconfiguration.violated",
+      "name": "Target Replication is not configured",
+      "suppressed": true,
+      "severity": {
+        "code": "risk.error",
+        "name": "Error"
+      },
+      "category": {
+        "code": "risk.recoverability",
+        "name": "Recoverability"
+      },
+      "detectionTime": "2019-08-08T15:02:19+05:30",
+      "affectedObject": {
+        "name": "NBU-Source-IA-Only",
+        "ref": "/rgs/889b1c0b-1edf-437b-aafb-49ce5ecd9ab2",
+        "type": {
+          "code": "object.type.rg",
+          "name": "Resiliency Group"
+        }
+      },
+      "affectedRgs": [
+        {
+          "name": "NBU-Source-IA-Only",
+          "ref": "/rgs/889b1c0b-1edf-437b-aafb-49ce5ecd9ab2"
+        }
+      ],
+      "affectedVbs": [],
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ],
+      "details": {
+        "description": "Target Replication is not configured.",
+        "resolution": "Check if Target Replication is configured."
+      }
+    }
+  ]
+}

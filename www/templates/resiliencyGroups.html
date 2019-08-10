@@ -1,0 +1,35 @@
+<!-- <ion-view
+	view-title="<div class='row'><div class='col col-30'><img src='img/Logo_QBR.png'></div><div class='list '><select  style='background-color: #D3D3D2;margin-right:2px;'><option selected>Veritas Resiliency Platform</option></select><img src='img/PSL_logo.jpg'></div></div>">
+<ion-content ng-controller="ResiliencyGroupsCtrl" on-swipe-right="goBack()"
+	on-swipe-left="goForward()" class="padding"> -->
+<ion-view view-title="ResiliencyGroups">
+  <ion-content>
+<!-- <div class="card" style="background-color: #F2F2F2; min-height: 450px;">
+	<div>
+		<div style="margin-top: 20px; margin-left: 20px; color: #050707;">
+			<h3>Resiliency Groups</h3>
+		</div>
+
+		<div ng-repeat="rg in RGs">
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					{{rg.name}}</div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{rg.state}}</div>
+			</div>
+		</div>
+	</div>
+</ion-content>  -->
+
+
+<ion-list>
+      <ion-item ng-repeat="rg in RGs" href="#/app/resiliencyGroups/{{rg.name}}">
+        {{rg.name}}
+      </ion-item>
+    </ion-list>
+
+</ion-content>
+
+</ion-view>

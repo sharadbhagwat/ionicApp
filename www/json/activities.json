@@ -1,0 +1,2762 @@
+{
+  "meta": {
+    "count": 109,
+    "activity.success": 94,
+    "activity.fail": 14,
+    "activity.abort": 1,
+    "activity.pause": 0,
+    "activity.pending": 0,
+    "activity.cancel": 0,
+    "activity.running": 0
+  },
+  "items": [
+    {
+      "id": "f1ea4638-7e58-4f1f-a636-ec240aa39a96",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-08T15:57:42+05:30",
+      "endTime": "2019-08-08T15:59:03+05:30",
+      "durationMin": 1.3535,
+      "objects": [
+        {
+          "name": "NBU-IA-RG",
+          "ref": "/rgs/20d2055a-7aea-4077-81f2-a4e0f2a7b194",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "c5a88421-e8f4-46a0-b05a-0e6691c224d6",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T15:53:38+05:30",
+      "endTime": "2019-08-08T15:54:59+05:30",
+      "durationMin": 1.3363,
+      "objects": [
+        {
+          "name": "NBU-All-option-RG",
+          "ref": "/rgs/c2167f8b-fd6d-4ddc-b017-546518fe90c1",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "3E6D9B5AB5714A008056597D91D37A2F",
+      "name": "Refresh vCenter pnd86vrpvc09.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T15:29:31+05:30",
+      "endTime": "2019-08-08T15:29:33+05:30",
+      "durationMin": 0.0378,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "46b4438d-7a77-48de-92fe-beeb39e1f9c0",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T15:07:21+05:30",
+      "endTime": "2019-08-08T15:07:37+05:30",
+      "durationMin": 0.2606,
+      "objects": [
+        {
+          "name": "NBU-Source-All-RG",
+          "ref": "/rgs/f8e0e453-01ca-40c0-bd12-7fcf794885d8",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "11b964dc-4b70-487c-b775-3b5651e8f653",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T15:05:03+05:30",
+      "endTime": "2019-08-08T15:05:22+05:30",
+      "durationMin": 0.3118,
+      "objects": [
+        {
+          "name": "NBU-Target-All-RG",
+          "ref": "/rgs/353c9115-5627-49a1-a819-2f3d62afd0bc",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "b2170d5b-4f1e-4f73-ab41-1fa7fd5b76fd",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T15:01:40+05:30",
+      "endTime": "2019-08-08T15:01:57+05:30",
+      "durationMin": 0.2844,
+      "objects": [
+        {
+          "name": "NBU-Source-IA-Only",
+          "ref": "/rgs/889b1c0b-1edf-437b-aafb-49ce5ecd9ab2",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "329a9fc5-9fdb-42f0-b50e-8fa978a6d277",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T14:59:05+05:30",
+      "endTime": "2019-08-08T14:59:22+05:30",
+      "durationMin": 0.2931,
+      "objects": [
+        {
+          "name": "NBU-Target-IA-Only",
+          "ref": "/rgs/55fef18d-b942-484e-afef-7d5d60d55f00",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "bc454c9a-036e-4a44-a955-c1f4adccfca5",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T14:57:16+05:30",
+      "endTime": "2019-08-08T14:57:36+05:30",
+      "durationMin": 0.324,
+      "objects": [
+        {
+          "name": "NBU-IA-Only",
+          "ref": "/rgs/7df2c301-c9e7-4d39-b986-a778fcb7ee03",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "54f9c127-df9e-4387-b038-0e4e4234da93",
+      "name": "Migrate resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T14:19:42+05:30",
+      "endTime": "2019-08-08T14:23:19+05:30",
+      "durationMin": 3.6219,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "2c63b9c1-9bd9-4dc6-9e97-d40240891f9e",
+      "name": "Migrate resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-08T14:03:13+05:30",
+      "endTime": "2019-08-08T14:05:56+05:30",
+      "durationMin": 2.7281,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "3b515482-cf04-47ca-929a-8a1fdc3bb2aa",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T14:01:44+05:30",
+      "endTime": "2019-08-08T14:02:16+05:30",
+      "durationMin": 0.5348,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "436CD86A28244016B72C976F12CC3EB5",
+      "name": "Refresh vCenter pnd86vrpvc04.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:55:13+05:30",
+      "endTime": "2019-08-08T12:55:15+05:30",
+      "durationMin": 0.0276,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "F89B8AE47A04475E8D7A79E94CE90629",
+      "name": "Refresh vCenter pnd86vrpvc04.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:54:09+05:30",
+      "endTime": "2019-08-08T12:54:11+05:30",
+      "durationMin": 0.0262,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "9ad5f6e1-31af-40ca-8dd5-216610724b28",
+      "name": "Unconfigure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:51:04+05:30",
+      "endTime": "2019-08-08T12:52:34+05:30",
+      "durationMin": 1.4973,
+      "objects": [
+        {
+          "name": "VAIO-RG7",
+          "ref": "/rgs/b0e8ca87-9fe4-4bf7-8506-8ec1cbdaad84",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "FEB1B4F29DE5478CBA8F40465A970B9D",
+      "name": "Refresh vCenter pnd86vrpvc04.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:50:05+05:30",
+      "endTime": "2019-08-08T12:50:06+05:30",
+      "durationMin": 0.0282,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "701be687-79cb-43d3-a0af-6e7daa6a3bbb",
+      "name": "Migrate resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:49:42+05:30",
+      "endTime": "2019-08-08T12:53:03+05:30",
+      "durationMin": 3.3393,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "dd608e19-47ca-46d7-b74b-ac029f814c07",
+      "name": "Cleanup rehearsal for Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:48:21+05:30",
+      "endTime": "2019-08-08T12:55:15+05:30",
+      "durationMin": 6.8971,
+      "objects": [
+        {
+          "name": "VAIO-VBS",
+          "ref": "/vbs/64f2af40-e289-2131-186d-953cf8481a05",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "29e76c93-3f25-40cb-8c45-405e6a0c1438",
+      "name": "Migrate resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-08T12:44:05+05:30",
+      "endTime": "2019-08-08T12:47:04+05:30",
+      "durationMin": 2.9927,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "3609A29CBF9E407482359535E979D982",
+      "name": "Refresh vCenter pnd86vrpvc09.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:32:27+05:30",
+      "endTime": "2019-08-08T12:32:30+05:30",
+      "durationMin": 0.0369,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "221efe11-7137-435a-9c1f-b173c91bf9de",
+      "name": "Migrate resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-08T12:27:18+05:30",
+      "endTime": "2019-08-08T12:27:53+05:30",
+      "durationMin": 0.5776,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "0f0e16a3-52f0-48f3-9e22-671dacfa3e05",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:26:34+05:30",
+      "endTime": "2019-08-08T12:28:53+05:30",
+      "durationMin": 2.3163,
+      "objects": [
+        {
+          "name": "NBU-RG10",
+          "ref": "/rgs/7203230a-e769-48d7-bc78-935782f9a4b5",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "0f1d818a-ae69-4610-88ec-f58ea6238018",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:21:31+05:30",
+      "endTime": "2019-08-08T12:23:09+05:30",
+      "durationMin": 1.6466,
+      "objects": [
+        {
+          "name": "NBU-RG9",
+          "ref": "/rgs/0bfc5f26-7392-4a41-b950-9c111e9e7c11",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "e9d5ce59-4db3-45b7-8a7b-9bbe82878d72",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:19:04+05:30",
+      "endTime": "2019-08-08T12:21:26+05:30",
+      "durationMin": 2.3757,
+      "objects": [
+        {
+          "name": "NBU-RG8",
+          "ref": "/rgs/df0f7fac-c29b-4e95-9209-cdde63f0db64",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "389ccaaf-0fba-418b-b65e-a267e5d2c6ad",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:15:29+05:30",
+      "endTime": "2019-08-08T12:16:37+05:30",
+      "durationMin": 1.1336,
+      "objects": [
+        {
+          "name": "NBU-RG7",
+          "ref": "/rgs/5b24a9a6-1da4-491d-a40f-da8996b14010",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "0e24551c-6bff-4140-aae6-77c5859d2e3f",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:12:51+05:30",
+      "endTime": "2019-08-08T12:13:52+05:30",
+      "durationMin": 1.0035,
+      "objects": [
+        {
+          "name": "NBU-RG6",
+          "ref": "/rgs/f4251fe0-3e18-4a61-968a-0c37771c08ec",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "3ae7f84a-d219-459d-9a13-2b74408013db",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.abort",
+        "name": "Aborted"
+      },
+      "startTime": "2019-08-08T12:10:58+05:30",
+      "endTime": "2019-08-08T12:11:34+05:30",
+      "durationMin": 0.6048,
+      "objects": [
+        {
+          "name": "NBU-RG6",
+          "ref": "/rgs/f4251fe0-3e18-4a61-968a-0c37771c08ec",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "78c418ef-36fb-4ab1-a280-77c322849e8a",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:04:31+05:30",
+      "endTime": "2019-08-08T12:04:49+05:30",
+      "durationMin": 0.3142,
+      "objects": [
+        {
+          "name": "NBU-RG5",
+          "ref": "/rgs/38c5bd64-db52-4de1-ae8d-00e93d5a8dc8",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "78f9d20c-63b2-416d-a979-5077f7c3f201",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:03:16+05:30",
+      "endTime": "2019-08-08T12:03:35+05:30",
+      "durationMin": 0.3172,
+      "objects": [
+        {
+          "name": "NBU-RG4",
+          "ref": "/rgs/2ddc32f9-ee94-4e7c-bc26-fdb78c97b58d",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "77af8c80-2960-4a46-929f-e948ae625193",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:01:49+05:30",
+      "endTime": "2019-08-08T12:02:09+05:30",
+      "durationMin": 0.3316,
+      "objects": [
+        {
+          "name": "NBU-RG3",
+          "ref": "/rgs/a24eb68e-6dbc-44ce-a5a2-9730c54aae00",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "32a58d57-56aa-4511-9db5-c716a5462862",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:00:35+05:30",
+      "endTime": "2019-08-08T12:00:55+05:30",
+      "durationMin": 0.3192,
+      "objects": [
+        {
+          "name": "NBU-RG2",
+          "ref": "/rgs/91deb183-5e46-408e-8f6c-6ee696ce9410",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "59ef0578-337c-4149-880d-0cffa84d2416",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T11:58:17+05:30",
+      "endTime": "2019-08-08T12:00:18+05:30",
+      "durationMin": 2.0175,
+      "objects": [
+        {
+          "name": "NBU-DNS-Cust-RG",
+          "ref": "/rgs/45962195-51b8-4caa-ae52-b580ffac6fb1",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "883c7e23-7d23-4090-b981-1a9d6ec19ec8",
+      "name": "Rehearse Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T11:54:39+05:30",
+      "endTime": "2019-08-08T12:12:34+05:30",
+      "durationMin": 17.9211,
+      "objects": [
+        {
+          "name": "VAIO-VBS",
+          "ref": "/vbs/64f2af40-e289-2131-186d-953cf8481a05",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "f6fb2ecb-5dfc-42dc-9c9e-83835aca6695",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T11:54+05:30",
+      "endTime": "2019-08-08T11:54:40+05:30",
+      "durationMin": 0.6803,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "bde37ecf-3632-4544-81e6-320cd0559a62",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-08T11:26:53+05:30",
+      "endTime": "2019-08-08T11:27:53+05:30",
+      "durationMin": 0.9937,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "8d174285-787d-44e0-9202-b108353990c4",
+      "name": "Cleanup rehearsal for Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T11:05:23+05:30",
+      "endTime": "2019-08-08T11:10:46+05:30",
+      "durationMin": 5.3738,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "fb7f7782-215b-44a9-a6e1-a2c48660891c",
+      "name": "Rehearse Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T10:38:49+05:30",
+      "endTime": "2019-08-08T10:55:16+05:30",
+      "durationMin": 16.4428,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "255f07ad-0725-433b-833a-4514cd9944f2",
+      "name": "Cleanup rehearsal for Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T10:30:58+05:30",
+      "endTime": "2019-08-08T10:36:13+05:30",
+      "durationMin": 5.2421,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "a7d32717-1bff-4680-ad77-fbfd8cabe8f8",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T10:29:54+05:30",
+      "endTime": "2019-08-08T10:30:26+05:30",
+      "durationMin": 0.528,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG3",
+          "ref": "/rgs/7c953d0d-9a29-4d90-839d-9b7820c4cba9",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "6c9e7ce9-50a0-4aeb-98f4-0aa11f197b55",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T10:28:46+05:30",
+      "endTime": "2019-08-08T10:29:13+05:30",
+      "durationMin": 0.4528,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG2",
+          "ref": "/rgs/9dbb2c26-b2b0-4e0d-b6f4-7eafbce4807a",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "b5d988ea-579c-46f0-b8de-2f9f80befee4",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T10:27:24+05:30",
+      "endTime": "2019-08-08T10:27:50+05:30",
+      "durationMin": 0.4373,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG1",
+          "ref": "/rgs/cb3506dd-83a7-4038-8e4a-a2340c08c18f",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "89138CA712FF419EB338E51F51D23780",
+      "name": "Refresh vCenter pnd86vrpvc09.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T15:35:53+05:30",
+      "endTime": "2019-08-07T15:35:56+05:30",
+      "durationMin": 0.0374,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "b4ca1929-356c-4be9-80d7-2aa3c23c63cb",
+      "name": "Rehearse Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T15:35:29+05:30",
+      "endTime": "2019-08-07T15:55:36+05:30",
+      "durationMin": 20.1192,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "d5a2035c-edbb-41cd-af41-a7fe31f1a3e1",
+      "name": "Cleanup rehearsal for Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T15:25:52+05:30",
+      "endTime": "2019-08-07T15:30:09+05:30",
+      "durationMin": 4.2812,
+      "objects": [
+        {
+          "name": "Mix-3PAR-RP-VBS",
+          "ref": "/vbs/80f09dcf-cef8-c2c7-f1ce-8d7fa8a23f2f",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "263eb363-c117-4870-b495-e55fc588620c",
+      "name": "Cleanup rehearsal for Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T15:21:36+05:30",
+      "endTime": "2019-08-07T15:25:26+05:30",
+      "durationMin": 3.831,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "a7f12424-3193-4fa1-b51b-df85e65e42e4",
+      "name": "Rehearse Virtual Business Service",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-07T15:02:54+05:30",
+      "endTime": "2019-08-07T15:16:20+05:30",
+      "durationMin": 13.4218,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "183601d4-97af-451c-b400-903006888927",
+      "name": "Rehearse Virtual Business Service",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-07T15:02:40+05:30",
+      "endTime": "2019-08-07T15:19:05+05:30",
+      "durationMin": 16.4079,
+      "objects": [
+        {
+          "name": "Mix-3PAR-RP-VBS",
+          "ref": "/vbs/80f09dcf-cef8-c2c7-f1ce-8d7fa8a23f2f",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "0b509b60-4f1a-4bda-85b6-188bfc42d67a",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-07T12:44:49+05:30",
+      "endTime": "2019-08-07T12:45:43+05:30",
+      "durationMin": 0.8997,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "c1312e76-4c08-41f6-b9ce-f377b8e15971",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T12:43:46+05:30",
+      "endTime": "2019-08-07T12:43:59+05:30",
+      "durationMin": 0.2214,
+      "objects": [
+        {
+          "name": "VAIO-RG6",
+          "ref": "/rgs/55f82a22-1f96-4efc-ba49-905ab13ea35b",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "84528084ED114D5CA8ECACDFD36A5D34",
+      "name": "Create Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T11:10:28+05:30",
+      "endTime": "2019-08-07T11:10:33+05:30",
+      "durationMin": 0.0822,
+      "objects": [
+        {
+          "name": "VAIO-VBS",
+          "ref": "/vbs/64f2af40-e289-2131-186d-953cf8481a05",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "DCE72FBE08704F9A9BDD9916FC734D66",
+      "name": "Create Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T10:47:09+05:30",
+      "endTime": "2019-08-07T10:47:09+05:30",
+      "durationMin": 0.0035,
+      "objects": [
+        {
+          "name": "Recoverpoint-VBS",
+          "ref": "/vbs/f6460bc6-6a56-7c15-794c-a9ca479afaa9",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "7C2142C5468240F69D6F6A65B5C42E10",
+      "name": "Create Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T10:45:12+05:30",
+      "endTime": "2019-08-07T10:45:12+05:30",
+      "durationMin": 0.0038,
+      "objects": [
+        {
+          "name": "Mix-3PAR-RP-VBS",
+          "ref": "/vbs/80f09dcf-cef8-c2c7-f1ce-8d7fa8a23f2f",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "BF90C179ACF944B6AB481BA6E27FF9DC",
+      "name": "Create Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T10:43:14+05:30",
+      "endTime": "2019-08-07T10:43:14+05:30",
+      "durationMin": 0.0068,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "bd682c15-41b4-4f0a-809b-4a30dbcc4c0c",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T23:36:19+05:30",
+      "endTime": "2019-08-06T23:40:21+05:30",
+      "durationMin": 4.0359,
+      "objects": [
+        {
+          "name": "saurabhRG6",
+          "ref": "/rgs/55f82a22-1f96-4efc-ba49-905ab13ea35b",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "3e78d43c-94bd-4fc5-a3c1-237d1e10d5af",
+      "name": "Unconfigure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T23:25:02+05:30",
+      "endTime": "2019-08-06T23:29:54+05:30",
+      "durationMin": 4.8706,
+      "objects": [
+        {
+          "name": "saurabhRG6",
+          "ref": "/rgs/6b907eb7-91b2-416a-a510-fa43af527a4d",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "946d7fa3-8176-484e-869c-99c00fd98ff3",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T23:06:31+05:30",
+      "endTime": "2019-08-06T23:10:22+05:30",
+      "durationMin": 3.8417,
+      "objects": [
+        {
+          "name": "saurabhRG6",
+          "ref": "/rgs/6b907eb7-91b2-416a-a510-fa43af527a4d",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "225d54e8-bdab-4474-a9f7-c4c9e69b8f42",
+      "name": "Unconfigure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T22:59:31+05:30",
+      "endTime": "2019-08-06T23:03:56+05:30",
+      "durationMin": 4.4195,
+      "objects": [
+        {
+          "name": "saurabhRG6",
+          "ref": "/rgs/ac5cc1ad-cde7-42e7-b90e-a7bb1ef43d2d",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "bb3d413b-fd0b-402a-9c66-0b281838badb",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T22:49:10+05:30",
+      "endTime": "2019-08-06T22:52:40+05:30",
+      "durationMin": 3.5051,
+      "objects": [
+        {
+          "name": "saurabhRG6",
+          "ref": "/rgs/ac5cc1ad-cde7-42e7-b90e-a7bb1ef43d2d",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "7fc8e898-0d79-4528-bf08-04e09bb73a24",
+      "name": "Unconfigure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T22:39:21+05:30",
+      "endTime": "2019-08-06T22:44:03+05:30",
+      "durationMin": 4.7085,
+      "objects": [
+        {
+          "name": "VAIO-RG6",
+          "ref": "/rgs/23f8cd4e-99af-4bd1-8aeb-8e73c2692557",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "3c302269-d122-4892-8317-1b2d61f84db8",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T19:41:30+05:30",
+      "endTime": "2019-08-06T19:41:55+05:30",
+      "durationMin": 0.4148,
+      "objects": [
+        {
+          "name": "saurabhRG",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "454671a6-0f0a-449c-ad62-6d73794e1d0e",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T17:51:30+05:30",
+      "endTime": "2019-08-06T17:56:15+05:30",
+      "durationMin": 4.7507,
+      "objects": [
+        {
+          "name": "VAIO-RG11",
+          "ref": "/rgs/91ee27b3-3b86-4b47-9783-1acb97ceb4e7",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "42ccb870-81fc-4189-8709-d62fbdd705d8",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T17:49:31+05:30",
+      "endTime": "2019-08-06T17:54:41+05:30",
+      "durationMin": 5.1563,
+      "objects": [
+        {
+          "name": "VAIO-RG10",
+          "ref": "/rgs/71c29afa-6054-4c96-a71b-75bd7f5fee5b",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "b03226b5-e0b6-4a78-aa60-8fa2b3437be1",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T17:47:02+05:30",
+      "endTime": "2019-08-06T17:51:33+05:30",
+      "durationMin": 4.5049,
+      "objects": [
+        {
+          "name": "VAIO-RG9",
+          "ref": "/rgs/28d0f4ab-5e9c-4954-bcf4-b4ea0ba37dbc",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "abdc698e-8884-4329-8585-f2c925f7bafa",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T17:44:43+05:30",
+      "endTime": "2019-08-06T17:48:52+05:30",
+      "durationMin": 4.139,
+      "objects": [
+        {
+          "name": "VAIO-RG8",
+          "ref": "/rgs/8a5ae12f-d2cf-4227-a9dd-13bc44230a30",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "6474f595-51d8-4fe4-b615-fb1c8ab9947b",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-06T17:42:26+05:30",
+      "endTime": "2019-08-06T17:44:42+05:30",
+      "durationMin": 2.2664,
+      "objects": [
+        {
+          "name": "VAIO-RG7",
+          "ref": "/rgs/b0e8ca87-9fe4-4bf7-8506-8ec1cbdaad84",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "5a4b9fe9-f245-4ce6-afc3-0dbcce852403",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T17:40:04+05:30",
+      "endTime": "2019-08-06T17:44:15+05:30",
+      "durationMin": 4.1731,
+      "objects": [
+        {
+          "name": "VAIO-RG6",
+          "ref": "/rgs/23f8cd4e-99af-4bd1-8aeb-8e73c2692557",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "bd6baf4d-7dc9-4954-83c0-4a24c2cca8d6",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T17:38:54+05:30",
+      "endTime": "2019-08-06T17:42:34+05:30",
+      "durationMin": 3.6689,
+      "objects": [
+        {
+          "name": "VAIO-RG5",
+          "ref": "/rgs/0e945425-751e-46eb-acca-db5efc844c97",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "bcbb5192-4031-413a-b208-343179f1359f",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T17:37:38+05:30",
+      "endTime": "2019-08-06T17:43:07+05:30",
+      "durationMin": 5.486,
+      "objects": [
+        {
+          "name": "VAIO-RG4",
+          "ref": "/rgs/f448ea51-2b84-4c73-9e96-515f5a050898",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "b1c9fda6-2cd9-4c60-9974-bbd41ef8d396",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T17:35:45+05:30",
+      "endTime": "2019-08-06T17:40:02+05:30",
+      "durationMin": 4.2806,
+      "objects": [
+        {
+          "name": "VAIO-RG3",
+          "ref": "/rgs/4e763b65-b9a4-42bf-9216-d8f7be1e0130",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "e5ac5a0c-b294-438e-9481-96e52c2edca1",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T17:33:56+05:30",
+      "endTime": "2019-08-06T17:37:40+05:30",
+      "durationMin": 3.732,
+      "objects": [
+        {
+          "name": "VAIO-RG2",
+          "ref": "/rgs/025f8eb8-d6a1-425c-9705-e0da85a955e0",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "39252d5b-62ce-4ff6-867c-352ee4e470bb",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T17:32:17+05:30",
+      "endTime": "2019-08-06T17:35:44+05:30",
+      "durationMin": 3.4533,
+      "objects": [
+        {
+          "name": "VAIO-RG1",
+          "ref": "/rgs/369b522b-5f97-4008-be09-b782b52dbcb3",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "4c2b091a-785f-4231-87d4-bbdb221c84e9",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T16:24:51+05:30",
+      "endTime": "2019-08-06T16:25:55+05:30",
+      "durationMin": 1.0634,
+      "objects": [
+        {
+          "name": "3PAR-RG-DNS-cust",
+          "ref": "/rgs/da52e9c4-cc13-4af4-b9e7-b86a2a0dcf02",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "be854a9c-16e9-4b44-9303-9444201063e5",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T16:21:42+05:30",
+      "endTime": "2019-08-06T16:22:04+05:30",
+      "durationMin": 0.3632,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG3",
+          "ref": "/rgs/7c953d0d-9a29-4d90-839d-9b7820c4cba9",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "449e9e25-c9ed-47ec-8725-06ef54a8e08b",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T16:21:02+05:30",
+      "endTime": "2019-08-06T16:21:20+05:30",
+      "durationMin": 0.3004,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG2",
+          "ref": "/rgs/9dbb2c26-b2b0-4e0d-b6f4-7eafbce4807a",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "a1723af8-f5ab-4f23-ba9f-4e2944379917",
+      "name": "Add NetBackup Master",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T16:02:19+05:30",
+      "endTime": "2019-08-06T16:02:24+05:30",
+      "durationMin": 0.075,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "8f67f155-c525-4c00-bfa6-79a4775937a1",
+      "name": "Add NetBackup Master",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T16:01:05+05:30",
+      "endTime": "2019-08-06T16:01:10+05:30",
+      "durationMin": 0.0739,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "4a7a2ef1-2f34-4766-b12f-26f5e1885350",
+      "name": "Add NetBackup Master",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:52:24+05:30",
+      "endTime": "2019-08-06T15:52:34+05:30",
+      "durationMin": 0.1681,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "b501aaf4-8a40-4193-b03d-350fea78e153",
+      "name": "Add NetBackup Master",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:52:23+05:30",
+      "endTime": "2019-08-06T15:52:34+05:30",
+      "durationMin": 0.1796,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "77b0a0da-c081-41a5-95dc-69013728b338",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:49:38+05:30",
+      "endTime": "2019-08-06T15:49:58+05:30",
+      "durationMin": 0.3302,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG1",
+          "ref": "/rgs/cb3506dd-83a7-4038-8e4a-a2340c08c18f",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "90FBAAC1570F4C4497F38CD04AB64DDA",
+      "name": "Refresh vCenter pnd86vrpvc09.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:42:37+05:30",
+      "endTime": "2019-08-06T15:42:40+05:30",
+      "durationMin": 0.0346,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "1F55F77D012643E596D34E86D8927622",
+      "name": "Refresh vCenter pnd86vrpvc04.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:27:07+05:30",
+      "endTime": "2019-08-06T15:27:10+05:30",
+      "durationMin": 0.038,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "b73085bd-8d23-4bd6-8e86-ff882273383e",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:18:28+05:30",
+      "endTime": "2019-08-06T15:19:53+05:30",
+      "durationMin": 1.4131,
+      "objects": [
+        {
+          "name": "3PAR-RG-same-WWN",
+          "ref": "/rgs/eeff1afd-09a7-46bf-bad1-e8d3823a669f",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "a31035a4-d69d-4817-8942-5ef379b3c291",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-06T15:14:22+05:30",
+      "endTime": "2019-08-06T15:14:38+05:30",
+      "durationMin": 0.2649,
+      "objects": [
+        {
+          "name": "3PAR-RG-DNS-cust",
+          "ref": "/rgs/da52e9c4-cc13-4af4-b9e7-b86a2a0dcf02",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "97d6e868-6646-462c-928b-d8b2d3c41fbe",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:12:08+05:30",
+      "endTime": "2019-08-06T15:12:25+05:30",
+      "durationMin": 0.2817,
+      "objects": [
+        {
+          "name": "3PAR-RG5",
+          "ref": "/rgs/a58a5417-ec5d-4487-9974-d61aba999691",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "fde6e39c-ec1a-4a92-9fed-3ba2f2f2206a",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:10:13+05:30",
+      "endTime": "2019-08-06T15:10:30+05:30",
+      "durationMin": 0.292,
+      "objects": [
+        {
+          "name": "3PAR-RG4",
+          "ref": "/rgs/599d2e16-5081-4dc7-9b30-afe5d5b6772f",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "abf73595-8856-42a2-8d5b-9a06afeb2920",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-06T15:08:12+05:30",
+      "endTime": "2019-08-06T15:08:28+05:30",
+      "durationMin": 0.2525,
+      "objects": [
+        {
+          "name": "3PAR-RG-DNS-cust",
+          "ref": "/rgs/da52e9c4-cc13-4af4-b9e7-b86a2a0dcf02",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "26f31ed1-ccb9-4b8e-88dd-5818782eb960",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-06T15:06:11+05:30",
+      "endTime": "2019-08-06T15:06:27+05:30",
+      "durationMin": 0.2706,
+      "objects": [
+        {
+          "name": "3PAR-RG-same-WWN",
+          "ref": "/rgs/eeff1afd-09a7-46bf-bad1-e8d3823a669f",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "4231eed2-356a-400c-acbc-06194c67f4af",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:04:41+05:30",
+      "endTime": "2019-08-06T15:06:23+05:30",
+      "durationMin": 1.7084,
+      "objects": [
+        {
+          "name": "3PAR-RG-diff-WWN",
+          "ref": "/rgs/057026a1-e205-4f39-aa4f-b3631fb11012",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "EF2FF1CA79D84A2684810DB1871E7529",
+      "name": "Refresh vCenter pnd86vrpvc09.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:02:39+05:30",
+      "endTime": "2019-08-06T15:02:41+05:30",
+      "durationMin": 0.033,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "8e4083a9-098e-4c17-85eb-1bbfd5576fe3",
+      "name": "Create Gateway Pair",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T14:55:25+05:30",
+      "endTime": "2019-08-06T14:58:11+05:30",
+      "durationMin": 2.7685,
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "A0019515CDAF4F79B21C9C517067F6D2",
+      "name": "Refresh vCenter pnd86vrpvc04.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T14:49:03+05:30",
+      "endTime": "2019-08-06T14:49:06+05:30",
+      "durationMin": 0.0395,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "abb57c22-1595-4488-a71d-acbc22097da5",
+      "name": "Add Replication Gateway",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T14:40:43+05:30",
+      "endTime": "2019-08-06T14:41:30+05:30",
+      "durationMin": 0.7856,
+      "datacenters": [
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "4b4ab8aa-3ca0-40b7-9cfd-631b8cf6514c",
+      "name": "Add Replication Gateway",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T14:32:54+05:30",
+      "endTime": "2019-08-06T14:33:41+05:30",
+      "durationMin": 0.7823,
+      "datacenters": [
+        {
+          "name": "Source DC"
+        }
+      ]
+    },
+    {
+      "id": "8CB893C139D04859A45D2B95FD55C53C",
+      "name": "Refresh vCenter pnd86vrpvc09.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T14:32:05+05:30",
+      "endTime": "2019-08-06T14:32:07+05:30",
+      "durationMin": 0.0349,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "cac642b2-4b05-4064-87c4-8849033b64ce",
+      "name": "Install Veritas Replication VIB on ESXi Clusters",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T12:59:33+05:30",
+      "endTime": "2019-08-06T13:01:27+05:30",
+      "durationMin": 1.9042,
+      "datacenters": [
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "f91245de-d800-49b4-a086-d896127cf5e8",
+      "name": "Install Veritas Replication VIB on ESXi Clusters",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T12:57:51+05:30",
+      "endTime": "2019-08-06T12:59:47+05:30",
+      "durationMin": 1.9363,
+      "datacenters": [
+        {
+          "name": "Source DC"
+        }
+      ]
+    },
+    {
+      "id": "54d8e12d-9541-4f2c-b4d8-085c8f306456",
+      "name": "Uninstall Veritas Replication VIB from ESXi Clusters",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T12:57:38+05:30",
+      "endTime": "2019-08-06T12:58:51+05:30",
+      "durationMin": 1.2269,
+      "datacenters": [
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "1305F13CB7FE4CC1915F0865741FAEEC",
+      "name": "Refresh vCenter pnd86vrpvc09.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T12:50+05:30",
+      "endTime": "2019-08-06T12:50:02+05:30",
+      "durationMin": 0.0363,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "dd0208d6-d668-49a1-9358-3e0d92a7a07f",
+      "name": "Uninstall Veritas Replication VIB from ESXi Clusters",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-06T12:42:28+05:30",
+      "endTime": "2019-08-06T12:42:36+05:30",
+      "durationMin": 0.1218,
+      "datacenters": [
+        {
+          "name": "Source DC"
+        }
+      ]
+    },
+    {
+      "id": "0e945a96-e38f-43c4-b863-2ee925ec1be2",
+      "name": "Uninstall Veritas Replication VIB from ESXi Clusters",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-06T12:42:20+05:30",
+      "endTime": "2019-08-06T12:42:26+05:30",
+      "durationMin": 0.0974,
+      "datacenters": [
+        {
+          "name": "Source DC"
+        }
+      ]
+    },
+    {
+      "id": "e52d023e-7c02-475d-a4c3-67ce7ceab060",
+      "name": "Add 3PAR Enclosure",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T12:20:29+05:30",
+      "endTime": "2019-08-06T12:20:37+05:30",
+      "durationMin": 0.1432,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "baac0c5b-d35d-4f33-aec2-0358db6ff7d6",
+      "name": "Add 3PAR Enclosure",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T12:14:17+05:30",
+      "endTime": "2019-08-06T12:14:23+05:30",
+      "durationMin": 0.0979,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "95d63331-7e02-4a49-a5ed-67064ce8db2b",
+      "name": "Add/Edit Recoverpoint Configuration",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T12:11:58+05:30",
+      "endTime": "2019-08-06T12:12:05+05:30",
+      "durationMin": 0.1036,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "33f607ca-1b49-4f71-875e-d4db3b209d7b",
+      "name": "Add/Edit Recoverpoint Configuration",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T12:07:18+05:30",
+      "endTime": "2019-08-06T12:07:23+05:30",
+      "durationMin": 0.0885,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "48241CF8A18843F090BFCA55178BBDDE",
+      "name": "Add IMS \"Target IMS2\"",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T11:55:07+05:30",
+      "endTime": "2019-08-06T11:55:16+05:30",
+      "durationMin": 0.1504,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "8485B33FFECF4165827EBF0E4CB604D9",
+      "name": "Add IMS \"Source IMS2\"",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T11:49:58+05:30",
+      "endTime": "2019-08-06T11:50:07+05:30",
+      "durationMin": 0.1509,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "4A48D9D8867246E59ECAF3B1ED5ECFBF",
+      "name": "Add vCenter pnd86vrpvc04.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T11:45:17+05:30",
+      "endTime": "2019-08-06T11:45:30+05:30",
+      "durationMin": 0.2149,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "4A17A6A8E4C04DB0B3F651D888A09BC5",
+      "name": "Add vCenter pnd86vrpvc09.pne.ven.veritas.com",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T10:46:55+05:30",
+      "endTime": "2019-08-06T10:47:06+05:30",
+      "durationMin": 0.1881,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    },
+    {
+      "id": "552A0019F0D04E718F55F532319B83AC",
+      "name": "Add IMS \"Target IMS\"",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T10:45:01+05:30",
+      "endTime": "2019-08-06T10:45:08+05:30",
+      "durationMin": 0.1266,
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        }
+      ]
+    },
+    {
+      "id": "E0B24FC854A54ADB91C0AFABF9FF4654",
+      "name": "Add IMS \"Source IMS\"",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T10:44:26+05:30",
+      "endTime": "2019-08-06T10:44:34+05:30",
+      "durationMin": 0.1455,
+      "datacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ]
+    }
+  ]
+}

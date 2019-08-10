@@ -1,0 +1,26 @@
+<ion-view view-title="Risks">
+  <ion-content fullscreen>
+    <ion-list>
+
+      <ion-item detail mode="md" ng-repeat="risk in Risks">
+
+          <ion-grid>
+            <ion-row align-items-start>
+            <ion-col style="display:inline-block;">
+          <ion-icon  name="warning" size="large" id="dynamicColor" ng-style="risk.severity == 'Warning' ? {'color': '#ffce00'} : {'color': 'red'}" style="height: 1.8em;" slot="end"></ion-icon>
+            </ion-col>
+            <ion-col style=" margin-left: 7px;display:inline-block;">
+              <ion-label >
+  <h2><b style="color: darkblue;">{{risk.name}}</b></h2>
+          <p>Severity : {{risk.severity}} | Object : {{risk.object}}</p>
+
+              </ion-label>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+      </ion-item>
+
+    </ion-list>
+
+  </ion-content>
+</ion-view>

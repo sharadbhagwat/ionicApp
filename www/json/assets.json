@@ -1,0 +1,22 @@
+{
+  "hosts": {
+    "technology": {
+      "VMware": 202
+    },
+    "operatingSystem": {
+      "Linux": 103,
+      "Unknown": 2,
+      "Windows": 97
+    },
+    "managed": 49,
+    "unmanaged": 153,
+    "ref": "/assets/hosts"
+  },
+  "applications": {
+    "clustered": {},
+    "nonClustered": {},
+    "managed": 0,
+    "unmanaged": 0,
+    "ref": "/assets/applications"
+  }
+}

@@ -1,0 +1,4339 @@
+{
+  "meta": {
+    "count": 36
+  },
+  "items": [
+    {
+      "id": "eeff1afd-09a7-46bf-bad1-e8d3823a669f",
+      "name": "3PAR-RG-same-WWN",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 1
+        },
+        "ref": "/rgs/eeff1afd-09a7-46bf-bad1-e8d3823a669f/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:25:34+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "remotecopy3par",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "3",
+                    "name": "Synced"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 584
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test15.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "vmware-test16.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "lastCompleted": {
+          "id": "8d174285-787d-44e0-9202-b108353990c4",
+          "name": "Rehearsal cleanup",
+          "state": {
+            "code": "activity.success",
+            "name": "Finished"
+          },
+          "ref": "/activities/8d174285-787d-44e0-9202-b108353990c4"
+        },
+        "current": [],
+        "ref": "/rgs/eeff1afd-09a7-46bf-bad1-e8d3823a669f/activities"
+      }
+    },
+    {
+      "id": "9dbb2c26-b2b0-4e0d-b6f4-7eafbce4807a",
+      "name": "Recoverpoint-RG2",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/9dbb2c26-b2b0-4e0d-b6f4-7eafbce4807a/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:35:15+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "recoverpoint",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "11",
+                    "name": "Consistent"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 3
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "recoverpoint-vm3.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "recoverpoint-vm4.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/9dbb2c26-b2b0-4e0d-b6f4-7eafbce4807a/activities"
+      }
+    },
+    {
+      "id": "7c953d0d-9a29-4d90-839d-9b7820c4cba9",
+      "name": "Recoverpoint-RG3",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/7c953d0d-9a29-4d90-839d-9b7820c4cba9/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:35:15+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "recoverpoint",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "11",
+                    "name": "Consistent"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 3
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "recoverpoint-vm6.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "recoverpoint-vm5.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/7c953d0d-9a29-4d90-839d-9b7820c4cba9/activities"
+      }
+    },
+    {
+      "id": "369b522b-5f97-4008-be09-b782b52dbcb3",
+      "name": "VAIO-RG1",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/369b522b-5f97-4008-be09-b782b52dbcb3/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:33:20+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "veritassr",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "Active",
+                    "name": "Active"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 0,
+              "protectedSizeGB": 31.0,
+              "syncedDataPercentage": 100.0,
+              "timeToSync": "00:00:00.000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test11.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "lastCompleted": {
+          "id": "dd608e19-47ca-46d7-b74b-ac029f814c07",
+          "name": "Rehearsal cleanup",
+          "state": {
+            "code": "activity.success",
+            "name": "Finished"
+          },
+          "ref": "/activities/dd608e19-47ca-46d7-b74b-ac029f814c07"
+        },
+        "current": [],
+        "ref": "/rgs/369b522b-5f97-4008-be09-b782b52dbcb3/activities"
+      }
+    },
+    {
+      "id": "4e763b65-b9a4-42bf-9216-d8f7be1e0130",
+      "name": "VAIO-RG3",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/4e763b65-b9a4-42bf-9216-d8f7be1e0130/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:32:41+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "veritassr",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "Active",
+                    "name": "Active"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 0,
+              "protectedSizeGB": 17.0,
+              "syncedDataPercentage": 100.0,
+              "timeToSync": "00:00:00.000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test13.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "lastCompleted": {
+          "id": "dd608e19-47ca-46d7-b74b-ac029f814c07",
+          "name": "Rehearsal cleanup",
+          "state": {
+            "code": "activity.success",
+            "name": "Finished"
+          },
+          "ref": "/activities/dd608e19-47ca-46d7-b74b-ac029f814c07"
+        },
+        "current": [],
+        "ref": "/rgs/4e763b65-b9a4-42bf-9216-d8f7be1e0130/activities"
+      }
+    },
+    {
+      "id": "91ee27b3-3b86-4b47-9783-1acb97ceb4e7",
+      "name": "VAIO-RG11",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/91ee27b3-3b86-4b47-9783-1acb97ceb4e7/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:32:12+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "veritassr",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "Active",
+                    "name": "Active"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 0,
+              "protectedSizeGB": 17.0,
+              "syncedDataPercentage": 100.0,
+              "timeToSync": "00:00:00.000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test7.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/91ee27b3-3b86-4b47-9783-1acb97ceb4e7/activities"
+      }
+    },
+    {
+      "id": "f448ea51-2b84-4c73-9e96-515f5a050898",
+      "name": "VAIO-RG4",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/f448ea51-2b84-4c73-9e96-515f5a050898/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:32:31+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "veritassr",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "Active",
+                    "name": "Active"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 0,
+              "protectedSizeGB": 17.0,
+              "syncedDataPercentage": 100.0,
+              "timeToSync": "00:00:00.000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test14.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "lastCompleted": {
+          "id": "dd608e19-47ca-46d7-b74b-ac029f814c07",
+          "name": "Rehearsal cleanup",
+          "state": {
+            "code": "activity.success",
+            "name": "Finished"
+          },
+          "ref": "/activities/dd608e19-47ca-46d7-b74b-ac029f814c07"
+        },
+        "current": [],
+        "ref": "/rgs/f448ea51-2b84-4c73-9e96-515f5a050898/activities"
+      }
+    },
+    {
+      "id": "599d2e16-5081-4dc7-9b30-afe5d5b6772f",
+      "name": "3PAR-RG4",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 1
+        },
+        "ref": "/rgs/599d2e16-5081-4dc7-9b30-afe5d5b6772f/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:27:34+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "remotecopy3par",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "3",
+                    "name": "Synced"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 464
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test17.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "lastCompleted": {
+          "id": "d5a2035c-edbb-41cd-af41-a7fe31f1a3e1",
+          "name": "Rehearsal cleanup",
+          "state": {
+            "code": "activity.success",
+            "name": "Finished"
+          },
+          "ref": "/activities/d5a2035c-edbb-41cd-af41-a7fe31f1a3e1"
+        },
+        "current": [],
+        "ref": "/rgs/599d2e16-5081-4dc7-9b30-afe5d5b6772f/activities"
+      }
+    },
+    {
+      "id": "28d0f4ab-5e9c-4954-bcf4-b4ea0ba37dbc",
+      "name": "VAIO-RG9",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/28d0f4ab-5e9c-4954-bcf4-b4ea0ba37dbc/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:32:56+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "veritassr",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "Active",
+                    "name": "Active"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 0,
+              "protectedSizeGB": 31.0,
+              "syncedDataPercentage": 100.0,
+              "timeToSync": "00:00:00.000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test5.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/28d0f4ab-5e9c-4954-bcf4-b4ea0ba37dbc/activities"
+      }
+    },
+    {
+      "id": "71c29afa-6054-4c96-a71b-75bd7f5fee5b",
+      "name": "VAIO-RG10",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/71c29afa-6054-4c96-a71b-75bd7f5fee5b/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:32:54+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "veritassr",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "Active",
+                    "name": "Active"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 40,
+              "protectedSizeGB": 17.0,
+              "syncedDataPercentage": 100.0,
+              "timeToSync": "00:00:00.000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test6.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/71c29afa-6054-4c96-a71b-75bd7f5fee5b/activities"
+      }
+    },
+    {
+      "id": "35612ada-0257-4933-8372-bc4204023e19",
+      "name": "Recoverpoint-RG4",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.atrisk",
+        "name": "At Risk"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 1,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:35:18+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "recoverpoint",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "11",
+                    "name": "Consistent"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 0
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "RP-Win16-16D-VM1",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "RP-Win2K12-R2",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "RP-Orcale-linux-73",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "lastCompleted": {
+          "id": "54f9c127-df9e-4387-b038-0e4e4234da93",
+          "name": "Migrate",
+          "state": {
+            "code": "activity.success",
+            "name": "Finished"
+          },
+          "ref": "/activities/54f9c127-df9e-4387-b038-0e4e4234da93"
+        },
+        "current": [],
+        "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19/activities"
+      }
+    },
+    {
+      "id": "55f82a22-1f96-4efc-ba49-905ab13ea35b",
+      "name": "VAIO-RG6",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/55f82a22-1f96-4efc-ba49-905ab13ea35b/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:32:19+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "veritassr",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "Active",
+                    "name": "Active"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 0,
+              "protectedSizeGB": 20.0,
+              "syncedDataPercentage": 100.0,
+              "timeToSync": "00:00:00.000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test21.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/55f82a22-1f96-4efc-ba49-905ab13ea35b/activities"
+      }
+    },
+    {
+      "id": "45962195-51b8-4caa-ae52-b580ffac6fb1",
+      "name": "NBU-DNS-Cust-RG",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/45962195-51b8-4caa-ae52-b580ffac6fb1/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-06T16:29:34+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-06T16:29:34+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565089174000"
+            },
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565089196000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565089174000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565089196000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-air-test1",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "nbu-air-test2",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/45962195-51b8-4caa-ae52-b580ffac6fb1/activities"
+      }
+    },
+    {
+      "id": "38c5bd64-db52-4de1-ae8d-00e93d5a8dc8",
+      "name": "NBU-RG5",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/38c5bd64-db52-4de1-ae8d-00e93d5a8dc8/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-06T16:29:41+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-06T16:29:41+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565089181000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565089181000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-air-test6",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/38c5bd64-db52-4de1-ae8d-00e93d5a8dc8/activities"
+      }
+    },
+    {
+      "id": "0bfc5f26-7392-4a41-b950-9c111e9e7c11",
+      "name": "NBU-RG9",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/0bfc5f26-7392-4a41-b950-9c111e9e7c11/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-02T11:18:04+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-02T11:18:04+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1564724892000"
+            },
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1564724884000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1564724892000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1564724884000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-msi-v8.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "nbu-msi-v7.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/0bfc5f26-7392-4a41-b950-9c111e9e7c11/activities"
+      }
+    },
+    {
+      "id": "55fef18d-b942-484e-afef-7d5d60d55f00",
+      "name": "NBU-Target-IA-Only",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/55fef18d-b942-484e-afef-7d5d60d55f00/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-08T14:00:32+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-08T14:00:32+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565253032000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565253032000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-vm3.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/55fef18d-b942-484e-afef-7d5d60d55f00/activities"
+      }
+    },
+    {
+      "id": "2ddc32f9-ee94-4e7c-bc26-fdb78c97b58d",
+      "name": "NBU-RG4",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/2ddc32f9-ee94-4e7c-bc26-fdb78c97b58d/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-06T16:29:30+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-06T16:29:30+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565089170000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565089170000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-air-test5",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/2ddc32f9-ee94-4e7c-bc26-fdb78c97b58d/activities"
+      }
+    },
+    {
+      "id": "353c9115-5627-49a1-a819-2f3d62afd0bc",
+      "name": "NBU-Target-All-RG",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/353c9115-5627-49a1-a819-2f3d62afd0bc/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              }
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              }
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-vm5.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/353c9115-5627-49a1-a819-2f3d62afd0bc/activities"
+      }
+    },
+    {
+      "id": "c2167f8b-fd6d-4ddc-b017-546518fe90c1",
+      "name": "NBU-All-option-RG",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.atrisk",
+        "name": "At Risk"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/c2167f8b-fd6d-4ddc-b017-546518fe90c1/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-08T14:00:50+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-08T14:00:50+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565253050000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565253050000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-vm7.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/c2167f8b-fd6d-4ddc-b017-546518fe90c1/activities"
+      }
+    },
+    {
+      "id": "7203230a-e769-48d7-bc78-935782f9a4b5",
+      "name": "NBU-RG10",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/7203230a-e769-48d7-bc78-935782f9a4b5/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-02T11:18:14+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-02T11:18:14+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1564724908000"
+            },
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1564724894000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1564724908000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1564724894000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-msi-v10.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "nbu-msi-v9.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/7203230a-e769-48d7-bc78-935782f9a4b5/activities"
+      }
+    },
+    {
+      "id": "889b1c0b-1edf-437b-aafb-49ce5ecd9ab2",
+      "name": "NBU-Source-IA-Only",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/889b1c0b-1edf-437b-aafb-49ce5ecd9ab2/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-08T14:00:31+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-08T14:00:31+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565253031000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565253031000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-vm4.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/889b1c0b-1edf-437b-aafb-49ce5ecd9ab2/activities"
+      }
+    },
+    {
+      "id": "f8e0e453-01ca-40c0-bd12-7fcf794885d8",
+      "name": "NBU-Source-All-RG",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/f8e0e453-01ca-40c0-bd12-7fcf794885d8/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-08T14:00:36+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-08T14:00:36+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565253036000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565253036000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-vm6.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/f8e0e453-01ca-40c0-bd12-7fcf794885d8/activities"
+      }
+    },
+    {
+      "id": "da52e9c4-cc13-4af4-b9e7-b86a2a0dcf02",
+      "name": "3PAR-RG-DNS-cust",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 1
+        },
+        "ref": "/rgs/da52e9c4-cc13-4af4-b9e7-b86a2a0dcf02/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:26:04+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "remotecopy3par",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "3",
+                    "name": "Synced"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 554
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test8.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "vmware-test9.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "lastCompleted": {
+          "id": "8d174285-787d-44e0-9202-b108353990c4",
+          "name": "Rehearsal cleanup",
+          "state": {
+            "code": "activity.success",
+            "name": "Finished"
+          },
+          "ref": "/activities/8d174285-787d-44e0-9202-b108353990c4"
+        },
+        "current": [],
+        "ref": "/rgs/da52e9c4-cc13-4af4-b9e7-b86a2a0dcf02/activities"
+      }
+    },
+    {
+      "id": "cb3506dd-83a7-4038-8e4a-a2340c08c18f",
+      "name": "Recoverpoint-RG1",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/cb3506dd-83a7-4038-8e4a-a2340c08c18f/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:35:15+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "recoverpoint",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "11",
+                    "name": "Consistent"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 3
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "recoverpoint-vm2.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "recoverpoint-vm1.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "lastCompleted": {
+          "id": "d5a2035c-edbb-41cd-af41-a7fe31f1a3e1",
+          "name": "Rehearsal cleanup",
+          "state": {
+            "code": "activity.success",
+            "name": "Finished"
+          },
+          "ref": "/activities/d5a2035c-edbb-41cd-af41-a7fe31f1a3e1"
+        },
+        "current": [],
+        "ref": "/rgs/cb3506dd-83a7-4038-8e4a-a2340c08c18f/activities"
+      }
+    },
+    {
+      "id": "8a5ae12f-d2cf-4227-a9dd-13bc44230a30",
+      "name": "VAIO-RG8",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/8a5ae12f-d2cf-4227-a9dd-13bc44230a30/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:33:15+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "veritassr",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "Active",
+                    "name": "Active"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 0,
+              "protectedSizeGB": 31.0,
+              "syncedDataPercentage": 100.0,
+              "timeToSync": "00:00:00.000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test4.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/8a5ae12f-d2cf-4227-a9dd-13bc44230a30/activities"
+      }
+    },
+    {
+      "id": "91deb183-5e46-408e-8f6c-6ee696ce9410",
+      "name": "NBU-RG2",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/91deb183-5e46-408e-8f6c-6ee696ce9410/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-06T16:29:42+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-06T16:29:42+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565089182000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565089182000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-air-test3",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/91deb183-5e46-408e-8f6c-6ee696ce9410/activities"
+      }
+    },
+    {
+      "id": "f4251fe0-3e18-4a61-968a-0c37771c08ec",
+      "name": "NBU-RG6",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/f4251fe0-3e18-4a61-968a-0c37771c08ec/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-06T16:30:13+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-06T16:30:13+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565089213000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565089213000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-msi-v3.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/f4251fe0-3e18-4a61-968a-0c37771c08ec/activities"
+      }
+    },
+    {
+      "id": "df0f7fac-c29b-4e95-9209-cdde63f0db64",
+      "name": "NBU-RG8",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/df0f7fac-c29b-4e95-9209-cdde63f0db64/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-02T11:18:16+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-02T11:18:16+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1564724896000"
+            },
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1564724907000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1564724896000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1564724907000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-msi-v5.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "nbu-msi-v6.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/df0f7fac-c29b-4e95-9209-cdde63f0db64/activities"
+      }
+    },
+    {
+      "id": "7df2c301-c9e7-4d39-b986-a778fcb7ee03",
+      "name": "NBU-IA-Only",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/7df2c301-c9e7-4d39-b986-a778fcb7ee03/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-08T12:45:46+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-08T12:45:46+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565248546000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565248546000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-vm1.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/7df2c301-c9e7-4d39-b986-a778fcb7ee03/activities"
+      }
+    },
+    {
+      "id": "20d2055a-7aea-4077-81f2-a4e0f2a7b194",
+      "name": "NBU-IA-RG",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.config.fail",
+        "name": "Configuration failed"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/20d2055a-7aea-4077-81f2-a4e0f2a7b194/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-08T14:00:30+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-08T14:00:30+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565253030000"
+            },
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565253059000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565253030000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565253059000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-vm8.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "nbu-vm9.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/20d2055a-7aea-4077-81f2-a4e0f2a7b194/activities"
+      }
+    },
+    {
+      "id": "057026a1-e205-4f39-aa4f-b3631fb11012",
+      "name": "3PAR-RG-diff-WWN",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 1
+        },
+        "ref": "/rgs/057026a1-e205-4f39-aa4f-b3631fb11012/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:33:19+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "remotecopy3par",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "3",
+                    "name": "Synced"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 119
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test18.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        },
+        {
+          "name": "vmware-test19.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "lastCompleted": {
+          "id": "8d174285-787d-44e0-9202-b108353990c4",
+          "name": "Rehearsal cleanup",
+          "state": {
+            "code": "activity.success",
+            "name": "Finished"
+          },
+          "ref": "/activities/8d174285-787d-44e0-9202-b108353990c4"
+        },
+        "current": [],
+        "ref": "/rgs/057026a1-e205-4f39-aa4f-b3631fb11012/activities"
+      }
+    },
+    {
+      "id": "a58a5417-ec5d-4487-9974-d61aba999691",
+      "name": "3PAR-RG5",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 1
+        },
+        "ref": "/rgs/a58a5417-ec5d-4487-9974-d61aba999691/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:30:04+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "remotecopy3par",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "3",
+                    "name": "Synced"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 314
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test22.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/a58a5417-ec5d-4487-9974-d61aba999691/activities"
+      }
+    },
+    {
+      "id": "025f8eb8-d6a1-425c-9705-e0da85a955e0",
+      "name": "VAIO-RG2",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/025f8eb8-d6a1-425c-9705-e0da85a955e0/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:33:44+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "veritassr",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "Active",
+                    "name": "Active"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 0,
+              "protectedSizeGB": 31.0,
+              "syncedDataPercentage": 100.0,
+              "timeToSync": "00:00:00.000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test12.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "lastCompleted": {
+          "id": "dd608e19-47ca-46d7-b74b-ac029f814c07",
+          "name": "Rehearsal cleanup",
+          "state": {
+            "code": "activity.success",
+            "name": "Finished"
+          },
+          "ref": "/activities/dd608e19-47ca-46d7-b74b-ac029f814c07"
+        },
+        "current": [],
+        "ref": "/rgs/025f8eb8-d6a1-425c-9705-e0da85a955e0/activities"
+      }
+    },
+    {
+      "id": "0e945425-751e-46eb-acca-db5efc844c97",
+      "name": "VAIO-RG5",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 0
+        },
+        "category": {
+          "risk.recoverability": 0,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/0e945425-751e-46eb-acca-db5efc844c97/risks"
+      },
+      "serviceObjective": {
+        "name": "Recover hosts (monitored)",
+        "recoveryTargets": [
+          {
+            "type": "replication",
+            "value": [
+              "remote"
+            ]
+          }
+        ],
+        "rpoInMin": [
+          {
+            "type": "replication",
+            "value": 5
+          }
+        ],
+        "monitored": true
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-09T22:33:48+05:30",
+          "type": "replication",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "replication",
+          "details": [
+            {
+              "sourceDatacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "targetDatacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "technology": "veritassr",
+              "state": {
+                "replicationState": [
+                  {
+                    "code": "Active",
+                    "name": "Active"
+                  }
+                ],
+                "connectionState": {
+                  "code": "state.connected",
+                  "name": "Connected"
+                },
+                "dataState": {
+                  "code": "state.consistent",
+                  "name": "Consistent"
+                }
+              },
+              "lagSec": 20,
+              "protectedSizeGB": 18.0,
+              "syncedDataPercentage": 100.0,
+              "timeToSync": "00:00:00.000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "vmware-test20.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "lastCompleted": {
+          "id": "dd608e19-47ca-46d7-b74b-ac029f814c07",
+          "name": "Rehearsal cleanup",
+          "state": {
+            "code": "activity.success",
+            "name": "Finished"
+          },
+          "ref": "/activities/dd608e19-47ca-46d7-b74b-ac029f814c07"
+        },
+        "current": [],
+        "ref": "/rgs/0e945425-751e-46eb-acca-db5efc844c97/activities"
+      }
+    },
+    {
+      "id": "a24eb68e-6dbc-44ce-a5a2-9730c54aae00",
+      "name": "NBU-RG3",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/a24eb68e-6dbc-44ce-a5a2-9730c54aae00/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-06T16:30:12+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-06T16:30:12+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565089212000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565089212000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-air-test4",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/a24eb68e-6dbc-44ce-a5a2-9730c54aae00/activities"
+      }
+    },
+    {
+      "id": "5b24a9a6-1da4-491d-a40f-da8996b14010",
+      "name": "NBU-RG7",
+      "underMaintenance": false,
+      "type": "asset.host",
+      "state": {
+        "code": "state.online",
+        "name": "Online"
+      },
+      "health": {
+        "code": "health.normal",
+        "name": "Normal"
+      },
+      "datacenters": [
+        {
+          "name": "Target DC",
+          "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+        },
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "activeDatacenters": [
+        {
+          "name": "Source DC",
+          "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+        }
+      ],
+      "risks": {
+        "severity": {
+          "risk.error": 0,
+          "risk.warning": 1
+        },
+        "category": {
+          "risk.recoverability": 1,
+          "risk.continuity": 0,
+          "risk.sla": 0
+        },
+        "ref": "/rgs/5b24a9a6-1da4-491d-a40f-da8996b14010/risks"
+      },
+      "serviceObjective": {
+        "name": "Local and remote recovery of hosts (not monitored)",
+        "recoveryTargets": [
+          {
+            "type": "copy",
+            "value": [
+              "remote",
+              "local"
+            ]
+          }
+        ],
+        "monitored": false
+      },
+      "currentRecoveryPoint": [
+        {
+          "rpTime": "2019-08-06T16:29:48+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          }
+        },
+        {
+          "rpTime": "2019-08-06T16:29:48+05:30",
+          "type": "copy",
+          "datacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          }
+        }
+      ],
+      "dataProtectionInfo": [
+        {
+          "type": "copy",
+          "details": [
+            {
+              "datacenter": {
+                "name": "Source DC",
+                "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+              },
+              "lastBackupTime": "1565089188000"
+            },
+            {
+              "datacenter": {
+                "name": "Target DC",
+                "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+              },
+              "lastBackupTime": "1565089188000"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "name": "nbu-msi-v4.vrpwindns.com",
+          "state": {
+            "code": "state.on",
+            "name": "On"
+          }
+        }
+      ],
+      "activities": {
+        "current": [],
+        "ref": "/rgs/5b24a9a6-1da4-491d-a40f-da8996b14010/activities"
+      }
+    }
+  ]
+}
