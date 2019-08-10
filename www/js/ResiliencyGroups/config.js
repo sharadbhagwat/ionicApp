@@ -13,9 +13,9 @@ angular
           }
         }
       })
-
+      
       .state('app.resiliencyGroup', {
-    	    url: '/resiliencyGroups/:resiliencyId',
+    	    url: '/resiliencyGroups/:rgId',
     	    views: {
     	      'menuContent': {
     	        templateUrl: 'templates/resiliencyGroup.html',

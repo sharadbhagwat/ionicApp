@@ -4,7 +4,8 @@ angular.module('starter', [
   'search.module',
   'resiliencyGroups.module',
   'risks.module',
-  'activities.module'
+  'activities.module',
+  'dashboard.module'
 ])
 
 .run(function($ionicPlatform) {

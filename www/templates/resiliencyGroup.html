@@ -1,5 +1,105 @@
-<ion-view view-title="RG">
-  <ion-content>
-    <h1>{{$scope}}</h1>
+<ion-view view-title="RG - {{rgObj.name}}">
+  <ion-content fullscreen>
+  <div class="card" style="background-color: #F2F2F2; min-height: 150px;">
+	<div>
+		<div style="margin-top: 20px; margin-left: 20px; color: #050707;">
+			<h3>Details</h3>
+		</div>
+
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					State</div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{rgObj.state}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					Health</div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{rgObj.health}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					Active Datacenter</div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{activeDC}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					Service Objective</div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{serviceObjective}}</div>
+			</div>
+			
+	</div>
+	</div>
+	  <div class="card" style="background-color: #F2F2F2; min-height: 150px;">
+	<div>
+		<div style="margin-top: 20px; margin-left: 20px; color: #050707;">
+			<h3>Risks</h3>
+		</div>
+		
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					Recoverability</div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{recoverability}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					Continuity</div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{continuity}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					SLA</div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{sla}}</div>
+			</div>
+	</div>
+	
+	</div>
+			
+			<!-- <div class="row">
+				 <ion-list>
+
+      <ion-item detail mode="md" ng-repeat="asset in assets" href="#/app/resiliencyGroups/{{rg.rgId}}">
+
+          <ion-grid>
+            <ion-icon src="../img/warning.svg"></ion-icon>
+              <ion-label >
+  <h2><b style="color: darkblue;">{{asset.name}}</b></h2>
+          <p>Name : {{asset.name}} | Object : {{asset.name}}</p>
+
+        </ion-label>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+			</div> -->
+		
+	
+
+  
+    
   </ion-content>
 </ion-view>
