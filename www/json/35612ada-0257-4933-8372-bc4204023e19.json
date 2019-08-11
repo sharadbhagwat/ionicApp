@@ -1,0 +1,141 @@
+{
+  "id": "35612ada-0257-4933-8372-bc4204023e19",
+  "name": "Recoverpoint-RG4",
+  "underMaintenance": false,
+  "type": "asset.host",
+  "state": {
+    "code": "state.online",
+    "name": "Online"
+  },
+  "health": {
+    "code": "health.atrisk",
+    "name": "At Risk"
+  },
+  "datacenters": [
+    {
+      "name": "Target DC",
+      "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+    },
+    {
+      "name": "Source DC",
+      "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+    }
+  ],
+  "activeDatacenters": [
+    {
+      "name": "Source DC",
+      "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+    }
+  ],
+  "risks": {
+    "severity": {
+      "risk.error": 0,
+      "risk.warning": 1
+    },
+    "category": {
+      "risk.recoverability": 0,
+      "risk.continuity": 1,
+      "risk.sla": 0
+    },
+    "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19/risks"
+  },
+  "serviceObjective": {
+    "name": "Recover hosts (monitored)",
+    "recoveryTargets": [
+      {
+        "type": "replication",
+        "value": [
+          "remote"
+        ]
+      }
+    ],
+    "rpoInMin": [
+      {
+        "type": "replication",
+        "value": 5
+      }
+    ],
+    "monitored": true
+  },
+  "currentRecoveryPoint": [
+    {
+      "rpTime": "2019-08-12T03:42:06+05:30",
+      "type": "replication",
+      "datacenter": {
+        "name": "Target DC",
+        "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+      }
+    }
+  ],
+  "dataProtectionInfo": [
+    {
+      "type": "replication",
+      "details": [
+        {
+          "sourceDatacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          },
+          "targetDatacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          },
+          "technology": "recoverpoint",
+          "state": {
+            "replicationState": [
+              {
+                "code": "11",
+                "name": "Consistent"
+              }
+            ],
+            "connectionState": {
+              "code": "state.connected",
+              "name": "Connected"
+            },
+            "dataState": {
+              "code": "state.consistent",
+              "name": "Consistent"
+            }
+          },
+          "lagSec": 0
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "RP-Win16-16D-VM1",
+      "state": {
+        "code": "state.on",
+        "name": "On"
+      }
+    },
+    {
+      "name": "RP-Win2K12-R2",
+      "state": {
+        "code": "state.on",
+        "name": "On"
+      }
+    },
+    {
+      "name": "RP-Orcale-linux-73",
+      "state": {
+        "code": "state.on",
+        "name": "On"
+      }
+    }
+  ],
+  "activities": {
+    "lastCompleted": {
+      "id": "54f9c127-df9e-4387-b038-0e4e4234da93",
+      "name": "Migrate",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "ref": "/activities/54f9c127-df9e-4387-b038-0e4e4234da93"
+    },
+    "current": [],
+    "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19/activities"
+  }
+}

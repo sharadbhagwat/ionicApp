@@ -1,0 +1,127 @@
+{
+  "id": "599d2e16-5081-4dc7-9b30-afe5d5b6772f",
+  "name": "3PAR-RG4",
+  "underMaintenance": false,
+  "type": "asset.host",
+  "state": {
+    "code": "state.online",
+    "name": "Online"
+  },
+  "health": {
+    "code": "health.normal",
+    "name": "Normal"
+  },
+  "datacenters": [
+    {
+      "name": "Target DC",
+      "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+    },
+    {
+      "name": "Source DC",
+      "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+    }
+  ],
+  "activeDatacenters": [
+    {
+      "name": "Source DC",
+      "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+    }
+  ],
+  "risks": {
+    "severity": {
+      "risk.error": 0,
+      "risk.warning": 1
+    },
+    "category": {
+      "risk.recoverability": 0,
+      "risk.continuity": 0,
+      "risk.sla": 1
+    },
+    "ref": "/rgs/599d2e16-5081-4dc7-9b30-afe5d5b6772f/risks"
+  },
+  "serviceObjective": {
+    "name": "Recover hosts (monitored)",
+    "recoveryTargets": [
+      {
+        "type": "replication",
+        "value": [
+          "remote"
+        ]
+      }
+    ],
+    "rpoInMin": [
+      {
+        "type": "replication",
+        "value": 5
+      }
+    ],
+    "monitored": true
+  },
+  "currentRecoveryPoint": [
+    {
+      "rpTime": "2019-08-12T03:29:27+05:30",
+      "type": "replication",
+      "datacenter": {
+        "name": "Target DC",
+        "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+      }
+    }
+  ],
+  "dataProtectionInfo": [
+    {
+      "type": "replication",
+      "details": [
+        {
+          "sourceDatacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          },
+          "targetDatacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          },
+          "technology": "remotecopy3par",
+          "state": {
+            "replicationState": [
+              {
+                "code": "3",
+                "name": "Synced"
+              }
+            ],
+            "connectionState": {
+              "code": "state.connected",
+              "name": "Connected"
+            },
+            "dataState": {
+              "code": "state.consistent",
+              "name": "Consistent"
+            }
+          },
+          "lagSec": 514
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "vmware-test17.vrpwindns.com",
+      "state": {
+        "code": "state.on",
+        "name": "On"
+      }
+    }
+  ],
+  "activities": {
+    "lastCompleted": {
+      "id": "d5a2035c-edbb-41cd-af41-a7fe31f1a3e1",
+      "name": "Rehearsal cleanup",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "ref": "/activities/d5a2035c-edbb-41cd-af41-a7fe31f1a3e1"
+    },
+    "current": [],
+    "ref": "/rgs/599d2e16-5081-4dc7-9b30-afe5d5b6772f/activities"
+  }
+}

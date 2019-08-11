@@ -1,0 +1,394 @@
+{
+  "meta": {
+    "count": 10,
+    "activity.success": 5,
+    "activity.fail": 5,
+    "activity.abort": 0,
+    "activity.pause": 0,
+    "activity.pending": 0,
+    "activity.cancel": 0,
+    "activity.running": 0
+  },
+  "items": [
+    {
+      "id": "54f9c127-df9e-4387-b038-0e4e4234da93",
+      "name": "Migrate resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T14:19:42+05:30",
+      "endTime": "2019-08-08T14:23:19+05:30",
+      "durationMin": 3.6219,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "2c63b9c1-9bd9-4dc6-9e97-d40240891f9e",
+      "name": "Migrate resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-08T14:03:13+05:30",
+      "endTime": "2019-08-08T14:05:56+05:30",
+      "durationMin": 2.7281,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ],
+      "tasks": {
+        "failed": [
+          {
+            "id": "2c63b9c1-9bd9-4dc6-9e97-d40240891f9e::4::MI1_Itr5_8::{20B1646D-B7B9-EA11-30EC-693C9BB967A4}",
+            "name": "Recoverpoint Failover Replication",
+            "state": {
+              "code": "activity.fail",
+              "name": "Failed"
+            },
+            "startTime": "2019-08-08T14:05:11+05:30",
+            "endTime": "2019-08-08T14:05:31+05:30",
+            "durationMin": 0.337,
+            "objects": [],
+            "datacenters": [],
+            "outputText": "[\"Unable to failover [VRP-CG2] consistency group.\\n\"]"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3b515482-cf04-47ca-929a-8a1fdc3bb2aa",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T14:01:44+05:30",
+      "endTime": "2019-08-08T14:02:16+05:30",
+      "durationMin": 0.5348,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "701be687-79cb-43d3-a0af-6e7daa6a3bbb",
+      "name": "Migrate resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T12:49:42+05:30",
+      "endTime": "2019-08-08T12:53:03+05:30",
+      "durationMin": 3.3393,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "29e76c93-3f25-40cb-8c45-405e6a0c1438",
+      "name": "Migrate resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-08T12:44:05+05:30",
+      "endTime": "2019-08-08T12:47:04+05:30",
+      "durationMin": 2.9927,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ],
+      "tasks": {
+        "failed": [
+          {
+            "id": "29e76c93-3f25-40cb-8c45-405e6a0c1438::5::MI42_Itr46_48::{C08BF580-ACB9-EA11-7A94-79E01A3C859F}",
+            "name": "VMware VMFS datastore mount",
+            "state": {
+              "code": "activity.fail",
+              "name": "Failed"
+            },
+            "startTime": "2019-08-08T12:46:59+05:30",
+            "endTime": "2019-08-08T12:47:04+05:30",
+            "durationMin": 0.0837,
+            "objects": [],
+            "datacenters": [],
+            "outputText": "[\"Failed to rename datastore. The name RP-DS1 already exists.\\n\"]"
+          }
+        ]
+      }
+    },
+    {
+      "id": "221efe11-7137-435a-9c1f-b173c91bf9de",
+      "name": "Migrate resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-08T12:27:18+05:30",
+      "endTime": "2019-08-08T12:27:53+05:30",
+      "durationMin": 0.5776,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ],
+      "tasks": {
+        "failed": [
+          {
+            "id": "221efe11-7137-435a-9c1f-b173c91bf9de::1::MI1_Itr5_7::{7045C9C3-A9B9-EA11-30EC-693C9BB967A4}",
+            "name": "VMware VM Shutdown",
+            "state": {
+              "code": "activity.fail",
+              "name": "Failed"
+            },
+            "startTime": "2019-08-08T12:27:22+05:30",
+            "endTime": "2019-08-08T12:27:53+05:30",
+            "durationMin": 0.5014,
+            "objects": [],
+            "datacenters": [],
+            "outputText": "[\"Failed to send shutdown request to VM [RP-Win16-16D-VM1] with error:\\n\"]"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f6fb2ecb-5dfc-42dc-9c9e-83835aca6695",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T11:54+05:30",
+      "endTime": "2019-08-08T11:54:40+05:30",
+      "durationMin": 0.6803,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "bde37ecf-3632-4544-81e6-320cd0559a62",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-08T11:26:53+05:30",
+      "endTime": "2019-08-08T11:27:53+05:30",
+      "durationMin": 0.9937,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ],
+      "tasks": {
+        "failed": [
+          {
+            "id": "bde37ecf-3632-4544-81e6-320cd0559a62::2::MI1_Itr5_7::{20897E55-A1B9-EA11-30EC-693C9BB967A4}",
+            "name": "VMware Install Guest Customization MSI",
+            "state": {
+              "code": "activity.fail",
+              "name": "Failed"
+            },
+            "startTime": "2019-08-08T11:27:03+05:30",
+            "endTime": "2019-08-08T11:27:53+05:30",
+            "durationMin": 0.8353,
+            "objects": [],
+            "datacenters": [],
+            "outputText": "[\"failure\"]"
+          }
+        ]
+      }
+    },
+    {
+      "id": "0b509b60-4f1a-4bda-85b6-188bfc42d67a",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-07T12:44:49+05:30",
+      "endTime": "2019-08-07T12:45:43+05:30",
+      "durationMin": 0.8997,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG4",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ],
+      "tasks": {
+        "failed": [
+          {
+            "id": "0b509b60-4f1a-4bda-85b6-188bfc42d67a::2::MI1_Itr5_7::{A0D2A70D-E3B8-EA11-30EC-693C9BB967A4}",
+            "name": "VMware Install Guest Customization MSI",
+            "state": {
+              "code": "activity.fail",
+              "name": "Failed"
+            },
+            "startTime": "2019-08-07T12:44:58+05:30",
+            "endTime": "2019-08-07T12:45:43+05:30",
+            "durationMin": 0.7548,
+            "objects": [],
+            "datacenters": [],
+            "outputText": "[\"failure\"]"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3c302269-d122-4892-8317-1b2d61f84db8",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T19:41:30+05:30",
+      "endTime": "2019-08-06T19:41:55+05:30",
+      "durationMin": 0.4148,
+      "objects": [
+        {
+          "name": "saurabhRG",
+          "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "54f9c127-df9e-4387-b038-0e4e4234da93",
+  "name": "Migrate resiliency group",
+  "state": {
+    "code": "activity.success",
+    "name": "Finished"
+  },
+  "startTime": "2019-08-08T14:19:42+05:30",
+  "endTime": "2019-08-08T14:23:19+05:30",
+  "durationMin": 3.6219,
+  "objects": [
+    {
+      "name": "Recoverpoint-RG4",
+      "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+      "type": {
+        "code": "object.type.rg",
+        "name": "Resiliency Group"
+      }
+    }
+  ],
+  "datacenters": [
+    {
+      "name": "Source DC"
+    },
+    {
+      "name": "Target DC"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "9ad5f6e1-31af-40ca-8dd5-216610724b28",
+  "name": "Unconfigure protection for resiliency group",
+  "state": {
+    "code": "activity.success",
+    "name": "Finished"
+  },
+  "startTime": "2019-08-08T12:51:04+05:30",
+  "endTime": "2019-08-08T12:52:34+05:30",
+  "durationMin": 1.4973,
+  "objects": [
+    {
+      "name": "VAIO-RG7",
+      "ref": "/rgs/b0e8ca87-9fe4-4bf7-8506-8ec1cbdaad84",
+      "type": {
+        "code": "object.type.rg",
+        "name": "Resiliency Group"
+      }
+    }
+  ],
+  "datacenters": [
+    {
+      "name": "Source DC"
+    },
+    {
+      "name": "Target DC"
+    }
+  ]
+}

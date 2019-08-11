@@ -1,0 +1,125 @@
+{
+  "id": "7c953d0d-9a29-4d90-839d-9b7820c4cba9",
+  "name": "Recoverpoint-RG3",
+  "underMaintenance": false,
+  "type": "asset.host",
+  "state": {
+    "code": "state.online",
+    "name": "Online"
+  },
+  "health": {
+    "code": "health.normal",
+    "name": "Normal"
+  },
+  "datacenters": [
+    {
+      "name": "Target DC",
+      "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+    },
+    {
+      "name": "Source DC",
+      "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+    }
+  ],
+  "activeDatacenters": [
+    {
+      "name": "Source DC",
+      "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+    }
+  ],
+  "risks": {
+    "severity": {
+      "risk.error": 0,
+      "risk.warning": 0
+    },
+    "category": {
+      "risk.recoverability": 0,
+      "risk.continuity": 0,
+      "risk.sla": 0
+    },
+    "ref": "/rgs/7c953d0d-9a29-4d90-839d-9b7820c4cba9/risks"
+  },
+  "serviceObjective": {
+    "name": "Recover hosts (monitored)",
+    "recoveryTargets": [
+      {
+        "type": "replication",
+        "value": [
+          "remote"
+        ]
+      }
+    ],
+    "rpoInMin": [
+      {
+        "type": "replication",
+        "value": 5
+      }
+    ],
+    "monitored": true
+  },
+  "currentRecoveryPoint": [
+    {
+      "rpTime": "2019-08-12T03:29:41+05:30",
+      "type": "replication",
+      "datacenter": {
+        "name": "Target DC",
+        "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+      }
+    }
+  ],
+  "dataProtectionInfo": [
+    {
+      "type": "replication",
+      "details": [
+        {
+          "sourceDatacenter": {
+            "name": "Source DC",
+            "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+          },
+          "targetDatacenter": {
+            "name": "Target DC",
+            "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+          },
+          "technology": "recoverpoint",
+          "state": {
+            "replicationState": [
+              {
+                "code": "11",
+                "name": "Consistent"
+              }
+            ],
+            "connectionState": {
+              "code": "state.connected",
+              "name": "Connected"
+            },
+            "dataState": {
+              "code": "state.consistent",
+              "name": "Consistent"
+            }
+          },
+          "lagSec": 2
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "recoverpoint-vm6.vrpwindns.com",
+      "state": {
+        "code": "state.on",
+        "name": "On"
+      }
+    },
+    {
+      "name": "recoverpoint-vm5.vrpwindns.com",
+      "state": {
+        "code": "state.on",
+        "name": "On"
+      }
+    }
+  ],
+  "activities": {
+    "current": [],
+    "ref": "/rgs/7c953d0d-9a29-4d90-839d-9b7820c4cba9/activities"
+  }
+}

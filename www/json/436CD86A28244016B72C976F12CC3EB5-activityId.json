@@ -1,0 +1,17 @@
+{
+  "id": "436CD86A28244016B72C976F12CC3EB5",
+  "name": "Refresh vCenter pnd86vrpvc04.pne.ven.veritas.com",
+  "state": {
+    "code": "activity.success",
+    "name": "Finished"
+  },
+  "startTime": "2019-08-08T12:55:13+05:30",
+  "endTime": "2019-08-08T12:55:15+05:30",
+  "durationMin": 0.0276,
+  "datacenters": [
+    {
+      "name": "Target DC",
+      "ref": "/datacenters/30f34207-0ab8-47bc-94eb-9644bf23e0e1"
+    }
+  ]
+}

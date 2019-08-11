@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "count": 4,
+    "activity.success": 3,
+    "activity.fail": 1,
+    "activity.abort": 0,
+    "activity.pause": 0,
+    "activity.pending": 0,
+    "activity.cancel": 0,
+    "activity.running": 0
+  },
+  "items": [
+    {
+      "id": "fde6e39c-ec1a-4a92-9fed-3ba2f2f2206a",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:10:13+05:30",
+      "endTime": "2019-08-06T15:10:30+05:30",
+      "durationMin": 0.292,
+      "objects": [
+        {
+          "name": "3PAR-RG4",
+          "ref": "/rgs/599d2e16-5081-4dc7-9b30-afe5d5b6772f",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "d5a2035c-edbb-41cd-af41-a7fe31f1a3e1",
+      "name": "Cleanup rehearsal for Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T15:25:52+05:30",
+      "endTime": "2019-08-07T15:30:09+05:30",
+      "durationMin": 4.2812,
+      "objects": [
+        {
+          "name": "Mix-3PAR-RP-VBS",
+          "ref": "/vbs/80f09dcf-cef8-c2c7-f1ce-8d7fa8a23f2f",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "183601d4-97af-451c-b400-903006888927",
+      "name": "Rehearse Virtual Business Service",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-07T15:02:40+05:30",
+      "endTime": "2019-08-07T15:19:05+05:30",
+      "durationMin": 16.4079,
+      "objects": [
+        {
+          "name": "Mix-3PAR-RP-VBS",
+          "ref": "/vbs/80f09dcf-cef8-c2c7-f1ce-8d7fa8a23f2f",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ],
+      "tasks": {
+        "failed": [
+          {
+            "id": "183601d4-97af-451c-b400-903006888927::3::SubWF::4::MI1_Itr5_8::{C00CD75F-F8B8-EA11-7A94-79E01A3C859F}",
+            "name": "VMware Customize Guest IP",
+            "state": {
+              "code": "activity.fail",
+              "name": "Failed"
+            },
+            "startTime": "2019-08-07T15:17:34+05:30",
+            "endTime": "2019-08-07T15:17:39+05:30",
+            "durationMin": 0.0837,
+            "objects": [],
+            "datacenters": [],
+            "outputText": "[\"Failed to update VMware tools status of [50168ad7-c92d-8d37-5957-14cd04fd8bb3] VM.\\n\"]"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7C2142C5468240F69D6F6A65B5C42E10",
+      "name": "Create Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T10:45:12+05:30",
+      "endTime": "2019-08-07T10:45:12+05:30",
+      "durationMin": 0.0038,
+      "objects": [
+        {
+          "name": "Mix-3PAR-RP-VBS",
+          "ref": "/vbs/80f09dcf-cef8-c2c7-f1ce-8d7fa8a23f2f",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    }
+  ]
+}

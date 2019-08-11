@@ -1,0 +1,47 @@
+{
+  "id": "2c63b9c1-9bd9-4dc6-9e97-d40240891f9e",
+  "name": "Migrate resiliency group",
+  "state": {
+    "code": "activity.fail",
+    "name": "Failed"
+  },
+  "startTime": "2019-08-08T14:03:13+05:30",
+  "endTime": "2019-08-08T14:05:56+05:30",
+  "durationMin": 2.7281,
+  "objects": [
+    {
+      "name": "Recoverpoint-RG4",
+      "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+      "type": {
+        "code": "object.type.rg",
+        "name": "Resiliency Group"
+      }
+    }
+  ],
+  "datacenters": [
+    {
+      "name": "Source DC"
+    },
+    {
+      "name": "Target DC"
+    }
+  ],
+  "tasks": {
+    "failed": [
+      {
+        "id": "2c63b9c1-9bd9-4dc6-9e97-d40240891f9e::4::MI1_Itr5_8::{20B1646D-B7B9-EA11-30EC-693C9BB967A4}",
+        "name": "Recoverpoint Failover Replication",
+        "state": {
+          "code": "activity.fail",
+          "name": "Failed"
+        },
+        "startTime": "2019-08-08T14:05:11+05:30",
+        "endTime": "2019-08-08T14:05:31+05:30",
+        "durationMin": 0.337,
+        "objects": [],
+        "datacenters": [],
+        "outputText": "[\"Unable to failover [VRP-CG2] consistency group.\\n\"]"
+      }
+    ]
+  }
+}

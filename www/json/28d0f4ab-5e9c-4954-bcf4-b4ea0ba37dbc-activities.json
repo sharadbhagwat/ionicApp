@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "count": 1,
+    "activity.success": 1,
+    "activity.fail": 0,
+    "activity.abort": 0,
+    "activity.pause": 0,
+    "activity.pending": 0,
+    "activity.cancel": 0,
+    "activity.running": 0
+  },
+  "items": [
+    {
+      "id": "b03226b5-e0b6-4a78-aa60-8fa2b3437be1",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T17:47:02+05:30",
+      "endTime": "2019-08-06T17:51:33+05:30",
+      "durationMin": 4.5049,
+      "objects": [
+        {
+          "name": "VAIO-RG9",
+          "ref": "/rgs/28d0f4ab-5e9c-4954-bcf4-b4ea0ba37dbc",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    }
+  ]
+}

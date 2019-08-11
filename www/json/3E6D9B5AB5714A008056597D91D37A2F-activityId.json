@@ -1,0 +1,17 @@
+{
+  "id": "3E6D9B5AB5714A008056597D91D37A2F",
+  "name": "Refresh vCenter pnd86vrpvc09.pne.ven.veritas.com",
+  "state": {
+    "code": "activity.success",
+    "name": "Finished"
+  },
+  "startTime": "2019-08-08T15:29:31+05:30",
+  "endTime": "2019-08-08T15:29:33+05:30",
+  "durationMin": 0.0378,
+  "datacenters": [
+    {
+      "name": "Source DC",
+      "ref": "/datacenters/e1ed4831-2d94-460e-a38b-95426cdf028b"
+    }
+  ]
+}

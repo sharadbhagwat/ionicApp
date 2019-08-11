@@ -1,0 +1,29 @@
+{
+  "id": "3b515482-cf04-47ca-929a-8a1fdc3bb2aa",
+  "name": "Re-configure protection for resiliency group",
+  "state": {
+    "code": "activity.success",
+    "name": "Finished"
+  },
+  "startTime": "2019-08-08T14:01:44+05:30",
+  "endTime": "2019-08-08T14:02:16+05:30",
+  "durationMin": 0.5348,
+  "objects": [
+    {
+      "name": "Recoverpoint-RG4",
+      "ref": "/rgs/35612ada-0257-4933-8372-bc4204023e19",
+      "type": {
+        "code": "object.type.rg",
+        "name": "Resiliency Group"
+      }
+    }
+  ],
+  "datacenters": [
+    {
+      "name": "Source DC"
+    },
+    {
+      "name": "Target DC"
+    }
+  ]
+}
