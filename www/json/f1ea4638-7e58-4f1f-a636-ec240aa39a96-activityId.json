@@ -1,0 +1,47 @@
+{
+  "id": "f1ea4638-7e58-4f1f-a636-ec240aa39a96",
+  "name": "Configure protection for resiliency group",
+  "state": {
+    "code": "activity.fail",
+    "name": "Failed"
+  },
+  "startTime": "2019-08-08T15:57:42+05:30",
+  "endTime": "2019-08-08T15:59:03+05:30",
+  "durationMin": 1.3535,
+  "objects": [
+    {
+      "name": "NBU-IA-RG",
+      "ref": "/rgs/20d2055a-7aea-4077-81f2-a4e0f2a7b194",
+      "type": {
+        "code": "object.type.rg",
+        "name": "Resiliency Group"
+      }
+    }
+  ],
+  "datacenters": [
+    {
+      "name": "Source DC"
+    },
+    {
+      "name": "Target DC"
+    }
+  ],
+  "tasks": {
+    "failed": [
+      {
+        "id": "f1ea4638-7e58-4f1f-a636-ec240aa39a96::2::MI1_Itr6_10::{70143E2B-C7B9-EA11-30EC-693C9BB967A4}",
+        "name": "VMware Install Guest Customization MSI",
+        "state": {
+          "code": "activity.fail",
+          "name": "Failed"
+        },
+        "startTime": "2019-08-08T15:57:53+05:30",
+        "endTime": "2019-08-08T15:58:53+05:30",
+        "durationMin": 1.0019,
+        "objects": [],
+        "datacenters": [],
+        "outputText": "[\"failure\"]"
+      }
+    ]
+  }
+}

@@ -1,5 +1,89 @@
-<ion-view view-title="Activity">
+<ion-view view-title="Activity Details">
   <ion-content>
-    <h1>hi</h1>
+  <div class="card" style="background-color: #F2F2F2; min-height: 150px;">
+	<div>
+		<div style="margin-top: 20px; margin-left: 20px; color: #050707;">
+			<h3> Details</h3>
+		</div>
+
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					<b>Activity</b></div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;" >
+					{{activityName}}</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					<b>Start Time</b></div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{startTime}}</div>
+			</div>	
+			
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					<b>End Time</b></div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{endTime}}</div>
+			</div>		
+			
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					<b>Duration in Minutes</b></div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{durationMin}}</div>
+			</div>	
+			
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					<b>State</b></div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;" ng-style="state == 'Failed' ? {'color': 'red'} : {'color': 'green'}">
+					{{state}}</div>
+			</div>				
+	</div>
+	</div>
+	
+	 
+     <div class="card" style="background-color: #F2F2F2; min-height: 150px;">
+	<div>
+		<div style="margin-top: 20px; margin-left: 20px; color: #050707;">
+			<h3>Object Details</h3>
+		</div>
+		
+		<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					<b>Name</b></div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					<b>Type</b></div>
+			</div>
+		<div ng-repeat="object in objects">
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					{{object.name}}</div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{object.type}}</div>
+			</div>
+		</div>	
+	</div>
+	
+	</div>
+	
+    
+    
   </ion-content>
 </ion-view>

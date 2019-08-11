@@ -9,6 +9,8 @@ angular
 	    request.send(null);
 	    var my_JSON_object = JSON.parse(request.responseText);
 	    
+	   //var my_JSON_object = loadDoc("http://localhost:8080/VRPRestAPI/api/assets");
+	    
 	    var request1 = new XMLHttpRequest();
 	    request1.open("GET", "json/risks.json", false);
 	    request1.send(null);
@@ -119,6 +121,25 @@ angular
         }]
     });
     
+    
+    
+    function loadDoc(url) {
+    	  var xhttp = new XMLHttpRequest();
+    	 // var url = "http://192.168.1.143:8080/SpringBootRestApi/api/user/";
+    	  $scope.responseText = undefined;
+    	  xhttp.onreadystatechange = function() {
+    	  	$scope.responseText = xhttp.responseText;
+    	  	
+    	  	if(angular.isDefined($scope.responseText) && $scope.responseText!=""){
+    	  		return $scope.responseText;
+    	  	}
+    	  };
+    	  xhttp.open("GET", url, true);
+    	  xhttp.setRequestHeader("Accept","application/json");
+    		xhttp.setRequestHeader("Content-Type","application/json");
+    	  xhttp.send();
+    	  //return $scope.responseText;
+    	}
  
 		
   });

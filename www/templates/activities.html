@@ -12,11 +12,21 @@
                     activity.state == 'Aborted'&& {'color': '#ffce00'}" style="height: 1.8em;" slot="end"></ion-icon>
             </ion-col>
             <ion-col style=" margin-left: 7px;display:inline-block;">
-              <ion-label >
-                <h2><b style="color: darkblue;">{{activity.name}}</b></h2>
+              <ion-label style = " margin: 0;
+  display: block;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: inherit;
+  text-overflow: ellipsis;
+  white-space: nowrap;width:100%">
+                <b style="color: darkblue;">{{activity.name}}</b>
                 <p  style="color:darkblack;">
-                  <span ng-if="activity.object !=undefined "><b>Object :</b> {{activity.object}}</span>
-                  <span ng-if="activity.object ==undefined "><b>Datacenter :</b> {{activity.datacenter}} </span> | <b>Duration:</b> {{activity.durationMin}} Min.</p>
+                  <span ng-if="activity.object !=undefined "><b>Object :</b> {{activity.object}}</span></p>
+                 <p  style="color:darkblack;"> <span ng-if="activity.object ==undefined "><b>Datacenter :</b> {{activity.datacenter}} </span></p> 
+<p  style="color:darkblack;"> <b>Duration:</b> {{activity.durationMin}} Min.</p>
       </ion-label>
               </ion-col>
             </ion-row>

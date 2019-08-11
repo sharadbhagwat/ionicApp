@@ -9,34 +9,54 @@
 			<div class="row">
 				<div class="col col-40"
 					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
-					State</div>
+					<b>State</b></div>
 				<div class="col col-60" align="left"
-					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;" ng-style="rgObj.state == 'Online' ? {'color': 'green'} : {'color': 'red'}">
 					{{rgObj.state}}</div>
 			</div>
 			
 			<div class="row">
 				<div class="col col-40"
 					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
-					Health</div>
+					<b>Health</b></div>
 				<div class="col col-60" align="left"
-					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;" ng-style="rgObj.health == 'Normal' ? {'color': 'green'} : {'color': 'red'}">
 					{{rgObj.health}}</div>
 			</div>
 			
 			<div class="row">
 				<div class="col col-40"
 					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
-					Active Datacenter</div>
+					<b>Datacenters</b></div>
 				<div class="col col-60" align="left"
 					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
-					{{activeDC}}</div>
+					<span ng-repeat="dc in datacenters" ng-style="dc.name == activeDC ? {'color': 'blue'} : {'color': '#676766'}"> {{dc.name}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					
+					</div>
 			</div>
 			
 			<div class="row">
 				<div class="col col-40"
 					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
-					Service Objective</div>
+					<b>Type</b></div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{type}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					<b>Technology</b></div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{technology}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					<b>Service Objective</b></div>
 				<div class="col col-60" align="left"
 					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
 					{{serviceObjective}}</div>
@@ -44,6 +64,37 @@
 			
 	</div>
 	</div>
+	
+	 <div class="card" style="background-color: #F2F2F2; min-height: 150px;">
+	<div>
+		<div style="margin-top: 20px; margin-left: 20px; color: #050707;">
+			<h3>VM Details</h3>
+		</div>
+		
+		<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					<b>VM Name</b></div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					<b>State</b></div>
+			</div>
+		<div ng-repeat="asset in RGAssets">
+			<div class="row">
+				<div class="col col-40"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					{{asset.name}}</div>
+				<div class="col col-60" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+					{{asset.state}}</div>
+			</div>
+		</div>	
+	</div>
+	
+	</div>
+	
+	
+	
 	  <div class="card" style="background-color: #F2F2F2; min-height: 150px;">
 	<div>
 		<div style="margin-top: 20px; margin-left: 20px; color: #050707;">
@@ -53,7 +104,7 @@
 			<div class="row">
 				<div class="col col-40"
 					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
-					Recoverability</div>
+					<b>Recoverability</b></div>
 				<div class="col col-60" align="left"
 					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
 					{{recoverability}}</div>
@@ -62,7 +113,7 @@
 			<div class="row">
 				<div class="col col-40"
 					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
-					Continuity</div>
+					<b>Continuity</b></div>
 				<div class="col col-60" align="left"
 					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
 					{{continuity}}</div>
@@ -71,7 +122,7 @@
 			<div class="row">
 				<div class="col col-40"
 					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
-					SLA</div>
+					<b>SLA</b></div>
 				<div class="col col-60" align="left"
 					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
 					{{sla}}</div>
@@ -84,6 +135,34 @@
 		<div id="activitiesDetails" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
 		<a class="button icon-right ion-chevron-right button-calm" href="#/app/rgActivities/{{rgId}}">More Details</a>
 	</div>
+    
+     <div class="card" style="background-color: #F2F2F2; min-height: 150px;">
+	<div>
+		<div style="margin-top: 20px; margin-left: 20px; color: #050707;">
+			<h3>Operations</h3>
+		</div>
+		
+			</div>
+		<div ng-repeat="option in listOfOptions">
+			<div class="row">
+			<div class="col col-60"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					{{option.detail}}</div>
+				
+			
+			
+				<div class="col col-30"
+					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
+					<button class="button button-small button-positive col col-100" ng-click="invokeOperation(option.operation)">{{option.operation}}</button></div>
+				
+			</div>
+		</div>	
+	</div>
+	
+	</div>
+	
+    
+    
     
   </ion-content>
 </ion-view>

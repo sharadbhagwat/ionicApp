@@ -43,6 +43,7 @@ angular.module('starter', [
   //   }
   // })
 
+  
   .state('app.browse', {
       url: '/browse',
       views: {

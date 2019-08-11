@@ -4,11 +4,9 @@ angular
   .module('resiliencyGroups.module')
   .controller('ResiliencyGroupsCtrl', function($scope) {
 	  
-	  
     console.log('ResiliencyGroupsCtrl');
     
-    
- //  loadData();
+    var my_JSON_object = undefined;
     
     var request = new XMLHttpRequest();
     request.open("GET", "json/resiliencyGroups.json", false);
@@ -17,26 +15,44 @@ angular
     console.log(my_JSON_object["items"]);
     
     $scope.RGs = [];
-    angular.forEach(my_JSON_object["items"], function(data){
-    	var rgObj = {};
-    	rgObj['rgId'] = data.id;
-    	rgObj['name'] = data.name;
-    	rgObj['state'] = data.state["name"];
-    	$scope.RGs.push(rgObj);
-    });
-	console.log($scope.RGs);
-	
-	
-	function loadData() {
-		var xhttp = new XMLHttpRequest();
-		  var url = "http://192.168.1.143:8080/SpringBootRestApi/api/user/";
-		  xhttp.onreadystatechange = function() {
-		  alert(xhttp.responseText);
-		  };
-		  xhttp.open("GET", url, true);
-		  xhttp.setRequestHeader("Accept","application/json");
-			xhttp.setRequestHeader("Content-Type","application/json");
-		  xhttp.send();
-		}
-		
-  });
+	    angular.forEach(my_JSON_object["items"], function(data){
+	    	var rgObj = {};
+	    	rgObj['rgId'] = data.id;
+	    	rgObj['name'] = data.name;
+	    	rgObj['state'] = data.state["name"];
+	    	rgObj['health'] = data.health["name"];
+	    	$scope.RGs.push(rgObj);
+	    });
+		console.log("sa"+$scope.RGs);
+    
+});
+    
+
+/*
+angular.module('resiliencyGroups.module').
+controller('ResiliencyGroupsCtrl', function($scope, ResiliencyService){
+	ResiliencyService.request().then(function(response){
+		console.log(response);
+		var my_JSON_object = response.data;
+		$scope.RGs = [];
+	    angular.forEach(my_JSON_object["items"], function(data){
+	    	var rgObj = {};
+	    	rgObj['rgId'] = data.id;
+	    	rgObj['name'] = data.name;
+	    	rgObj['state'] = data.state["name"];
+	    	rgObj['health'] = data.health["name"];
+	    	$scope.RGs.push(rgObj);
+	    });
+		console.log("sa"+$scope.RGs);
+		// Response from server
+	});
+});
+ 
+angular.module('resiliencyGroups.module')
+.factory('ResiliencyService', function($http){
+  return{
+    request: function(message){
+        return $http({ url:"http://localhost:8080/VRPRestAPI/api/rgs" ,method:"GET"});
+    }
+  }
+});*/

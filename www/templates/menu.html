@@ -14,24 +14,87 @@
 
   <ion-side-menu side="left">
     <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
+      <h1 class="title" style="color: #B1181E;">VRP</h1>
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close ng-click="login()">
-          Authorize
-        </ion-item>
         <ion-item menu-close href="#/app/dashboard">
-          Dashboard
+        <ion-row align-items-start>
+            <ion-col style="display:inline-block;">
+          <ion-icon  name="analytics" size="small" id="dynamicColor" ng-style="{'color': '#B1181E'}" style="height: 1.8em;" slot="end"></ion-icon>
+            </ion-col>
+            <ion-col style=" margin-left: 7px;display:inline-block;">
+              <ion-label style="color: #B1181E;">
+			 Dashboard
+              </ion-label>
+              </ion-col>
+            </ion-row>
+        
+         <!--  <ion-icon name="analytics"></ion-icon>Dashboard -->
         </ion-item>
 		<ion-item menu-close href="#/app/resiliencyGroups">
-          Resiliency Groups
+		
+		<ion-row align-items-start>
+            <ion-col style="display:inline-block;">
+          <ion-icon  name="grid" size="small" id="dynamicColor" ng-style="{'color': '#B1181E'}" style="height: 1.8em;" slot="end"></ion-icon>
+            </ion-col>
+            <ion-col style=" margin-left: 7px;display:inline-block;">
+              <ion-label style="color: #B1181E;">
+			 Resiliency Groups
+              </ion-label>
+              </ion-col>
+            </ion-row>
+          
         </ion-item>
         <ion-item menu-close href="#/app/risks">
-          Risks
+        
+        <ion-row align-items-start>
+            <ion-col style="display:inline-block;">
+          <ion-icon  name="warning" size="small" id="dynamicColor" ng-style="{'color': '#B1181E'}" style="height: 1.8em;" slot="end"></ion-icon>
+            </ion-col>
+            <ion-col style=" margin-left: 7px;display:inline-block;">
+             <ion-label style="color: #B1181E;">
+			 Risks
+              </ion-label>
+              </ion-col>
+            </ion-row>
         </ion-item>
         <ion-item menu-close href="#/app/activities">
-          Activities
+        
+        <ion-row align-items-start>
+            <ion-col style="display:inline-block;">
+          <ion-icon  name="play" size="small" id="dynamicColor" ng-style="{'color': '#B1181E'}" style="height: 1.8em;" slot="end"></ion-icon>
+            </ion-col>
+            <ion-col style=" margin-left: 7px;display:inline-block;">
+              <ion-label style="color: #B1181E;">
+			 Activities
+              </ion-label>
+              </ion-col>
+            </ion-row>
+        </ion-item>
+        <ion-item menu-close ng-click="login()">
+        <ion-row align-items-start>
+            <ion-col style="display:inline-block;">
+          <ion-icon  name="checkmark-circle-outline" size="small" id="dynamicColor" ng-style="{'color': '#B1181E'}" style="height: 1.8em;" slot="end"></ion-icon>
+            </ion-col>
+            <ion-col style=" margin-left: 7px;display:inline-block;">
+              <ion-label style="color: #B1181E;">
+			 Authorize
+              </ion-label>
+              </ion-col>
+            </ion-row>
+        </ion-item>
+        <ion-item menu-close ng-click="login()">
+        <ion-row align-items-start>
+            <ion-col style="display:inline-block;">
+          <ion-icon  name="settings" size="small" id="dynamicColor" ng-style="{'color': '#B1181E'}" style="height: 1.8em;" slot="end"></ion-icon>
+            </ion-col>
+            <ion-col style=" margin-left: 7px;display:inline-block;">
+              <ion-label style="color: #B1181E;">
+			 Settings
+              </ion-label>
+              </ion-col>
+            </ion-row>
         </ion-item>
       </ion-list>
     </ion-content>

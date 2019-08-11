@@ -1,0 +1,29 @@
+{
+  "id": "c5a88421-e8f4-46a0-b05a-0e6691c224d6",
+  "name": "Configure protection for resiliency group",
+  "state": {
+    "code": "activity.success",
+    "name": "Finished"
+  },
+  "startTime": "2019-08-08T15:53:38+05:30",
+  "endTime": "2019-08-08T15:54:59+05:30",
+  "durationMin": 1.3363,
+  "objects": [
+    {
+      "name": "NBU-All-option-RG",
+      "ref": "/rgs/c2167f8b-fd6d-4ddc-b017-546518fe90c1",
+      "type": {
+        "code": "object.type.rg",
+        "name": "Resiliency Group"
+      }
+    }
+  ],
+  "datacenters": [
+    {
+      "name": "Source DC"
+    },
+    {
+      "name": "Target DC"
+    }
+  ]
+}

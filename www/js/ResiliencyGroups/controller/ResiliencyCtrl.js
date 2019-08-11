@@ -8,7 +8,7 @@ angular.module('resiliencyGroups.module').controller('ResiliencyCtrl',
 			var jsonFileName = "json/" + $stateParams.rgId + ".json"
 			var request = new XMLHttpRequest();
 			request.open("GET", jsonFileName, false);
-			request.send(null);
+			request.send();
 			var my_JSON_object = JSON.parse(request.responseText);
 			console.log(my_JSON_object);
 			$scope.rgObj = {};
@@ -30,7 +30,24 @@ angular.module('resiliencyGroups.module').controller('ResiliencyCtrl',
 
 			$scope.activeDC = my_JSON_object["activeDatacenters"][0].name;
 			$scope.serviceObjective = my_JSON_object["serviceObjective"].name;
-
+			$scope.type = my_JSON_object["dataProtectionInfo"][0].type;
+			$scope.technology = my_JSON_object["dataProtectionInfo"][0]["details"][0].technology;
+			
+			$scope.RGAssets = [];
+		    angular.forEach(my_JSON_object["assets"], function(data){
+		    	var rgObj = {};
+		    	rgObj['name'] = data.name;
+		    	rgObj['state'] = data.state["name"];
+		    	$scope.RGAssets.push(rgObj);
+		    });
+		    
+		    $scope.datacenters = [];
+		    angular.forEach(my_JSON_object["datacenters"], function(data){
+		    	var rgObj = {};
+		    	rgObj['name'] = data.name;
+		    	$scope.datacenters.push(rgObj);
+		    });
+			
 			
 			console.log($scope.rgObj);
 			
@@ -38,7 +55,7 @@ angular.module('resiliencyGroups.module').controller('ResiliencyCtrl',
 			jsonFileName = "json/" + $stateParams.rgId + "-activities.json"
 			request = new XMLHttpRequest();
 			request.open("GET", jsonFileName, false);
-			request.send(null);
+			request.send();
 			my_JSON_object = JSON.parse(request.responseText);
 			console.log(my_JSON_object);
 			
@@ -111,6 +128,19 @@ angular.module('resiliencyGroups.module').controller('ResiliencyCtrl',
 			    });
 			    
 			
-			
+			 
+			 $scope.listOfOptions = [
+				 {'detail':'Start operation will start all the VMs of this Resiliency Group','operation':'Start'},
+				 {'detail':'Stop operation will stop all the VMs of this Resiliency Group','operation':'Stop'},
+				 {'detail':'Migrate operation will perform Migrate operation on VMs of this Resiliency Group','operation':'Migrate'},
+				 {'detail':'Takeover operation will perform Takeover operation on VMs of this Resiliency Group','operation':'Takeover'},
+				 {'detail':'Rehearsal operation will perform Rehearsal operation on VMs of this Resiliency Group','operation':'Rehearsal'},
+				 {'detail':'Cleanup Rehearsal operation will perform Cleanup Rehearsal operation on VMs of this Resiliency Group','operation':'Cleanup Rehearsal'},
+				 {'detail':'Resync operation will perform Resync operation on VMs of this Resiliency Group','operation':'Resync'}];
+			 
+			 
+			$scope.invokeOperation = function(data){
+				alert(''+data + ' operation invoked');
+			}
 			
 		});
