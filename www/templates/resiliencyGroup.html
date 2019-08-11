@@ -1,5 +1,5 @@
 <ion-view view-title="RG - {{rgObj.name}}">
-  <ion-content fullscreen>
+  <ion-content>
   <div class="card" style="background-color: #F2F2F2; min-height: 150px;">
 	<div>
 		<div style="margin-top: 20px; margin-left: 20px; color: #050707;">
@@ -80,26 +80,10 @@
 	
 	</div>
 			
-			<!-- <div class="row">
-				 <ion-list>
-
-      <ion-item detail mode="md" ng-repeat="asset in assets" href="#/app/resiliencyGroups/{{rg.rgId}}">
-
-          <ion-grid>
-            <ion-icon src="../img/warning.svg"></ion-icon>
-              <ion-label >
-  <h2><b style="color: darkblue;">{{asset.name}}</b></h2>
-          <p>Name : {{asset.name}} | Object : {{asset.name}}</p>
-
-        </ion-label>
-              </ion-col>
-            </ion-row>
-        </ion-grid>
-			</div> -->
-		
-	
-
-  
+	<div class="card" style=" min-height: 150px;">
+		<div id="activitiesDetails" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+		<a class="button icon-right ion-chevron-right button-calm" href="#/app/rgActivities/{{rgId}}">More Details</a>
+	</div>
     
   </ion-content>
 </ion-view>

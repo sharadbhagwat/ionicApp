@@ -22,5 +22,15 @@ angular
     	        controller: 'ResiliencyCtrl'
     	      }
     	    }
-    	  });
+    	  })
+    
+    .state('app.rgActivities', {
+	    url: '/rgActivities/:rgId',
+	    views: {
+	      'menuContent': {
+	        templateUrl: 'templates/rgActivities.html',
+	        controller: 'RgActivitiesCtrl'
+	      }
+	    }
+	  });
   });

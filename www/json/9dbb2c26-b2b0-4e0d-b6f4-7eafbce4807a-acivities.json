@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "count": 3,
+    "activity.success": 3,
+    "activity.fail": 0,
+    "activity.abort": 0,
+    "activity.pause": 0,
+    "activity.pending": 0,
+    "activity.cancel": 0,
+    "activity.running": 0
+  },
+  "items": [
+    {
+      "id": "6c9e7ce9-50a0-4aeb-98f4-0aa11f197b55",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T10:28:46+05:30",
+      "endTime": "2019-08-08T10:29:13+05:30",
+      "durationMin": 0.4528,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG2",
+          "ref": "/rgs/9dbb2c26-b2b0-4e0d-b6f4-7eafbce4807a",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "449e9e25-c9ed-47ec-8725-06ef54a8e08b",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T16:21:02+05:30",
+      "endTime": "2019-08-06T16:21:20+05:30",
+      "durationMin": 0.3004,
+      "objects": [
+        {
+          "name": "Recoverpoint-RG2",
+          "ref": "/rgs/9dbb2c26-b2b0-4e0d-b6f4-7eafbce4807a",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "DCE72FBE08704F9A9BDD9916FC734D66",
+      "name": "Create Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T10:47:09+05:30",
+      "endTime": "2019-08-07T10:47:09+05:30",
+      "durationMin": 0.0035,
+      "objects": [
+        {
+          "name": "Recoverpoint-VBS",
+          "ref": "/vbs/f6460bc6-6a56-7c15-794c-a9ca479afaa9",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    }
+  ]
+}

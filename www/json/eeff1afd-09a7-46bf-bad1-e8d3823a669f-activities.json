@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "count": 9,
+    "activity.success": 7,
+    "activity.fail": 2,
+    "activity.abort": 0,
+    "activity.pause": 0,
+    "activity.pending": 0,
+    "activity.cancel": 0,
+    "activity.running": 0
+  },
+  "items": [
+    {
+      "id": "b73085bd-8d23-4bd6-8e86-ff882273383e",
+      "name": "Re-configure protection for resiliency group",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-06T15:18:28+05:30",
+      "endTime": "2019-08-06T15:19:53+05:30",
+      "durationMin": 1.4131,
+      "objects": [
+        {
+          "name": "3PAR-RG-same-WWN",
+          "ref": "/rgs/eeff1afd-09a7-46bf-bad1-e8d3823a669f",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "26f31ed1-ccb9-4b8e-88dd-5818782eb960",
+      "name": "Configure protection for resiliency group",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-06T15:06:11+05:30",
+      "endTime": "2019-08-06T15:06:27+05:30",
+      "durationMin": 0.2706,
+      "objects": [
+        {
+          "name": "3PAR-RG-same-WWN",
+          "ref": "/rgs/eeff1afd-09a7-46bf-bad1-e8d3823a669f",
+          "type": {
+            "code": "object.type.rg",
+            "name": "Resiliency Group"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ],
+      "tasks": {
+        "failed": [
+          {
+            "id": "26f31ed1-ccb9-4b8e-88dd-5818782eb960::2::MI1_Itr5_7::{F0A8A5A4-2DB8-EA11-30EC-693C9BB967A4}",
+            "name": "VMware Install Guest Customization MSI",
+            "state": {
+              "code": "activity.fail",
+              "name": "Failed"
+            },
+            "startTime": "2019-08-06T15:06:22+05:30",
+            "endTime": "2019-08-06T15:06:27+05:30",
+            "durationMin": 0.0835,
+            "objects": [],
+            "datacenters": [],
+            "outputText": "[\"Failed to create directory.\\n\"]"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8d174285-787d-44e0-9202-b108353990c4",
+      "name": "Cleanup rehearsal for Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T11:05:23+05:30",
+      "endTime": "2019-08-08T11:10:46+05:30",
+      "durationMin": 5.3738,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "fb7f7782-215b-44a9-a6e1-a2c48660891c",
+      "name": "Rehearse Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T10:38:49+05:30",
+      "endTime": "2019-08-08T10:55:16+05:30",
+      "durationMin": 16.4428,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "255f07ad-0725-433b-833a-4514cd9944f2",
+      "name": "Cleanup rehearsal for Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-08T10:30:58+05:30",
+      "endTime": "2019-08-08T10:36:13+05:30",
+      "durationMin": 5.2421,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "b4ca1929-356c-4be9-80d7-2aa3c23c63cb",
+      "name": "Rehearse Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T15:35:29+05:30",
+      "endTime": "2019-08-07T15:55:36+05:30",
+      "durationMin": 20.1192,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "263eb363-c117-4870-b495-e55fc588620c",
+      "name": "Cleanup rehearsal for Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T15:21:36+05:30",
+      "endTime": "2019-08-07T15:25:26+05:30",
+      "durationMin": 3.831,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    },
+    {
+      "id": "a7f12424-3193-4fa1-b51b-df85e65e42e4",
+      "name": "Rehearse Virtual Business Service",
+      "state": {
+        "code": "activity.fail",
+        "name": "Failed"
+      },
+      "startTime": "2019-08-07T15:02:54+05:30",
+      "endTime": "2019-08-07T15:16:20+05:30",
+      "durationMin": 13.4218,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ],
+      "tasks": {
+        "failed": [
+          {
+            "id": "a7f12424-3193-4fa1-b51b-df85e65e42e4::2::SubWF::5::MI1_Itr6_10::{50EB0DE8-F7B8-EA11-819D-9996A4260DC7}",
+            "name": "Add Windows DNS",
+            "state": {
+              "code": "activity.fail",
+              "name": "Failed"
+            },
+            "startTime": "2019-08-07T15:14:10+05:30",
+            "endTime": "2019-08-07T15:14:35+05:30",
+            "durationMin": 0.4171,
+            "objects": [],
+            "datacenters": [],
+            "outputText": "[\"{\\\"RESOURCE_RECORDS\\\":{\\\"3par-vm1.vrpwindns.com.\\\":[\\\"192.168.105.108\\\"],\\\"3par-vm2.vrpwindns.com.\\\":[\\\"192.168.105.109\\\"]},\\\"NAME_SERVERS\\\":[{\\\"NS_IP\\\":\\\"10.209.248.85\\\",\\\"DOMAINS\\\":{\\\"vrpwindns.com\\\":{\\\"AUTH_TYPE\\\":\\\"GSSAPI\\\"}}}],\\\"Result\\\":{\\\"10.209.248.85\\\":{\\\"vrpwindns.com\\\":{\\\"UPDATE_SUCCESS\\\":{\\\"192.168.105.108\\\":\\\"3par-vm1.vrpwindns.com.\\\",\\\"192.168.105.109\\\":\\\"3par-vm2.vrpwindns.com.\\\"},\\\"PTR_UPDATE_FAILED\\\":{\\\"192.168.105.108\\\":\\\"3par-vm1.vrpwindns.com.\\\",\\\"192.168.105.109\\\":\\\"3par-vm2.vrpwindns.com.\\\"}}}},\\\"ErrorMessage\\\":\\\"; TSIG error with server: tsig verify failure\\\\ncould not find enclosing zone\\\",\\\"MANAGE_PTR\\\":1}\"]"
+          },
+          {
+            "id": "a7f12424-3193-4fa1-b51b-df85e65e42e4::2::SubWF::5::MI1_Itr5_8::{30D903E8-F7B8-EA11-7A94-79E01A3C859F}",
+            "name": "Add Windows DNS",
+            "state": {
+              "code": "activity.fail",
+              "name": "Failed"
+            },
+            "startTime": "2019-08-07T15:14:13+05:30",
+            "endTime": "2019-08-07T15:14:33+05:30",
+            "durationMin": 0.335,
+            "objects": [],
+            "datacenters": [],
+            "outputText": "[\"{\\\"Result\\\":{\\\"10.209.248.85\\\":{\\\"vrpwindns.com\\\":{\\\"UPDATE_SUCCESS\\\":{\\\"192.168.105.108\\\":\\\"3par-vm1.vrpwindns.com.\\\",\\\"192.168.105.109\\\":\\\"3par-vm2.vrpwindns.com.\\\"},\\\"PTR_UPDATE_FAILED\\\":{\\\"192.168.105.108\\\":\\\"3par-vm1.vrpwindns.com.\\\",\\\"192.168.105.109\\\":\\\"3par-vm2.vrpwindns.com.\\\"},\\\"UPDATE_FAILED\\\":{\\\"192.168.105.108\\\":\\\"3par-vm1.vrpwindns.com.\\\"}}}},\\\"RESOURCE_RECORDS\\\":{\\\"3par-vm2.vrpwindns.com.\\\":[\\\"192.168.105.109\\\"],\\\"3par-vm1.vrpwindns.com.\\\":[\\\"192.168.105.108\\\"]},\\\"ErrorMessage\\\":\\\"; TSIG error with server: tsig verify failure\\\\ncould not find enclosing zone\\\",\\\"NAME_SERVERS\\\":[{\\\"NS_IP\\\":\\\"10.209.248.85\\\",\\\"DOMAINS\\\":{\\\"vrpwindns.com\\\":{\\\"AUTH_TYPE\\\":\\\"GSSAPI\\\"}}}],\\\"MANAGE_PTR\\\":1}\"]"
+          },
+          {
+            "id": "a7f12424-3193-4fa1-b51b-df85e65e42e4::2::SubWF::5::14",
+            "name": "Consolidate results of Register DNS Resource Records config operations",
+            "state": {
+              "code": "activity.fail",
+              "name": "Failed"
+            },
+            "startTime": "2019-08-07T15:14:35+05:30",
+            "endTime": "2019-08-07T15:14:35+05:30",
+            "durationMin": 0.0005,
+            "objects": [],
+            "datacenters": [],
+            "outputText": "Register DNS operations failure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BF90C179ACF944B6AB481BA6E27FF9DC",
+      "name": "Create Virtual Business Service",
+      "state": {
+        "code": "activity.success",
+        "name": "Finished"
+      },
+      "startTime": "2019-08-07T10:43:14+05:30",
+      "endTime": "2019-08-07T10:43:14+05:30",
+      "durationMin": 0.0068,
+      "objects": [
+        {
+          "name": "3PAR-VBS",
+          "ref": "/vbs/460ed40b-16e6-afa0-9711-398f4f53b59d",
+          "type": {
+            "code": "object.type.vbs",
+            "name": "Virtual Business Service"
+          }
+        }
+      ],
+      "datacenters": [
+        {
+          "name": "Source DC"
+        },
+        {
+          "name": "Target DC"
+        }
+      ]
+    }
+  ]
+}
