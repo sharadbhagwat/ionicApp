@@ -116,7 +116,7 @@ angular
                 y: riskObj['continuity']
             }, {
                 name: 'SLA',
-                y: rgObj['sla']
+                y: riskObj['sla']
             }]
         }]
     });
