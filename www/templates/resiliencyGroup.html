@@ -72,20 +72,20 @@
 		</div>
 		
 		<div class="row">
-				<div class="col col-40"
+				<div class="col col-80"
 					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
 					<b>VM Name</b></div>
-				<div class="col col-60" align="left"
+				<div class="col col-20" align="left"
 					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
 					<b>State</b></div>
 			</div>
 		<div ng-repeat="asset in RGAssets">
 			<div class="row">
-				<div class="col col-40"
+				<div class="col col-80"
 					style="margin-top: 10px; color: #323332; margin-left: 20px; font-size: 14px;line-height: 30px;">
 					{{asset.name}}</div>
-				<div class="col col-60" align="left"
-					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;">
+				<div class="col col-20" align="left"
+					style="margin-top: 10px; color: #676766; font-size: 14px; line-height: 30px;margin-right: 20px;" ng-style="asset.state == 'On' ? {'color': 'green'} : {'color': 'red'}">
 					{{asset.state}}</div>
 			</div>
 		</div>	
